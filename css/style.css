@@ -1163,22 +1163,39 @@ div[class*="rounded-full"][class*="bg-gradient-to-tr from-blue"] {
   display: none;
 }
 
-/* Continuous Team Carousel Loop */
-@keyframes teamScroll {
+/* Continuous Team Carousel Loop with Centered Founder on Initial Entry */
+@keyframes teamScrollMobile {
   0% {
-    transform: translateX(0);
+    transform: translateX(calc(50vw - 145px));
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(calc(50vw - 145px - 50%));
+  }
+}
+
+@keyframes teamScrollDesktop {
+  0% {
+    transform: translateX(calc(50vw - 160px));
+  }
+  100% {
+    transform: translateX(calc(50vw - 160px - 50%));
   }
 }
 
 .team-loop-track {
   display: flex;
   width: max-content;
-  animation: teamScroll 32s linear infinite;
+  transform: translateX(calc(50vw - 145px));
+  animation: teamScrollMobile 32s linear infinite;
   animation-play-state: paused;
   will-change: transform;
+}
+
+@media (min-width: 640px) {
+  .team-loop-track {
+    transform: translateX(calc(50vw - 160px));
+    animation-name: teamScrollDesktop;
+  }
 }
 
 .team-loop-track.is-running {
