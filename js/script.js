@@ -209,25 +209,25 @@
     starter: {
       id: 'starter',
       name: 'Starter',
-      budget: '₹15K – ₹35K',
+      budget: '₹20K – ₹60K',
       description: 'For businesses that need a professional online presence — business websites, company websites, landing pages, and portfolio websites. Includes responsive design, clean frontend build, and basic CMS or form integrations.',
     },
     grow: {
       id: 'grow',
       name: 'Grow',
-      budget: '₹45K – ₹75K',
+      budget: '₹80K – ₹1.50L',
       description: 'For growing businesses that need more than a website — custom web applications, e-commerce stores, customer or member portals, user authentication, databases, admin dashboards, and business workflows.',
     },
     scale: {
       id: 'scale',
       name: 'Scale',
-      budget: '₹80K – ₹1.10L',
+      budget: '₹1.60L – ₹2.50L',
       description: 'For complex business applications — custom ERP systems, retail POS software, internal operational tools, multi-role access systems, third-party integrations, and advanced backend architecture.',
     },
     custom: {
       id: 'custom',
       name: 'Custom',
-      budget: 'Custom',
+      budget: '₹2.50L+',
       description: 'For projects with complex or unusual requirements. We run a discovery and scoping process, define the system architecture, plan phased delivery, and provide a detailed technical proposal and cost estimate.',
     }
   };
@@ -323,7 +323,8 @@
   // 2. PLAN SELECTION & BUDGET ENGINE
   // -----------------------------------------------------------------------------
   window.selectPlan = function (planId) {
-    const plan = plansData[planId] || plansData.custom;
+    const key = (planId || '').toLowerCase();
+    const plan = plansData[key] || plansData.custom;
 
     const planSelect = document.getElementById('inq-plan');
     const budgetSelect = document.getElementById('inq-budget');
@@ -331,12 +332,14 @@
 
     if (planSelect) {
       planSelect.value = plan.name;
+      planSelect.dispatchEvent(new Event('change', { bubbles: true }));
       planSelect.classList.add('field-highlight');
       setTimeout(() => planSelect.classList.remove('field-highlight'), 1200);
     }
 
     if (budgetSelect) {
       budgetSelect.value = plan.budget;
+      budgetSelect.dispatchEvent(new Event('change', { bubbles: true }));
       budgetSelect.classList.add('field-highlight');
       setTimeout(() => budgetSelect.classList.remove('field-highlight'), 1200);
     }
