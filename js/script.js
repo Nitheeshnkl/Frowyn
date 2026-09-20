@@ -1371,26 +1371,38 @@
   function initMobileNav() {
     const toggle = document.getElementById('menu-toggle');
     const mobileNav = document.getElementById('mobile-nav');
+    const heroToggle = document.getElementById('hero-menu-toggle');
+    const heroMobileNav = document.getElementById('hero-mobile-nav');
+
+    const openMobileNav = (open) => {
+      if (!mobileNav || !toggle) return;
+      mobileNav.classList.toggle('hidden', !open);
+      mobileNav.style.display = open ? 'flex' : '';
+      toggle.setAttribute('aria-expanded', String(open));
+    };
+
+    const openHeroNav = (open) => {
+      if (!heroMobileNav || !heroToggle) return;
+      heroMobileNav.classList.toggle('hidden', !open);
+      heroToggle.setAttribute('aria-expanded', String(open));
+    };
+
     if (toggle && mobileNav) {
-      const openMobileNav = (open) => {
-        mobileNav.classList.toggle('hidden', !open);
-        mobileNav.style.display = open ? 'flex' : '';
-        toggle.setAttribute('aria-expanded', String(open));
-      };
       toggle.addEventListener('click', () => openMobileNav(mobileNav.classList.contains('hidden')));
       mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => openMobileNav(false)));
     }
 
-    const heroToggle = document.getElementById('hero-menu-toggle');
-    const heroMobileNav = document.getElementById('hero-mobile-nav');
     if (heroToggle && heroMobileNav) {
-      const openHeroNav = (open) => {
-        heroMobileNav.classList.toggle('hidden', !open);
-        heroToggle.setAttribute('aria-expanded', String(open));
-      };
       heroToggle.addEventListener('click', () => openHeroNav(heroMobileNav.classList.contains('hidden')));
       heroMobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => openHeroNav(false)));
     }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        openMobileNav(false);
+        openHeroNav(false);
+      }
+    });
   }
 
   function initScrollHeader() {
