@@ -403,7 +403,7 @@
         const a = document.createElement('a');
         a.href = url;
         a.target = '_blank';
-        a.rel = 'noopener';
+        a.rel = 'noopener noreferrer';
         a.className = 'inline-flex items-center gap-1.5 text-xs text-slate-400 hover:text-cyan-300 transition-colors';
         a.innerHTML = `<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="${icon}"/></svg><span>${label}</span>`;
         contactSocial.appendChild(a);
