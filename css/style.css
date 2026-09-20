@@ -1163,8 +1163,8 @@ div[class*="rounded-full"][class*="bg-gradient-to-tr from-blue"] {
   display: none;
 }
 
-/* Continuous Team Carousel Loop with Centered Founder on Initial Entry */
-@keyframes teamScrollMobile {
+/* 1. Initial 1-cycle animation with Founder starting in the center */
+@keyframes teamScrollIntroMobile {
   0% {
     transform: translateX(calc(50vw - 145px));
   }
@@ -1173,7 +1173,7 @@ div[class*="rounded-full"][class*="bg-gradient-to-tr from-blue"] {
   }
 }
 
-@keyframes teamScrollDesktop {
+@keyframes teamScrollIntroDesktop {
   0% {
     transform: translateX(calc(50vw - 160px));
   }
@@ -1182,11 +1182,22 @@ div[class*="rounded-full"][class*="bg-gradient-to-tr from-blue"] {
   }
 }
 
+/* 2. Standard seamless infinite loop for all subsequent cycles */
+@keyframes teamScrollInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .team-loop-track {
   display: flex;
   width: max-content;
   transform: translateX(calc(50vw - 145px));
-  animation: teamScrollMobile 32s linear infinite;
+  animation-duration: 32s;
+  animation-timing-function: linear;
   animation-play-state: paused;
   will-change: transform;
 }
@@ -1194,12 +1205,27 @@ div[class*="rounded-full"][class*="bg-gradient-to-tr from-blue"] {
 @media (min-width: 640px) {
   .team-loop-track {
     transform: translateX(calc(50vw - 160px));
-    animation-name: teamScrollDesktop;
   }
 }
 
+/* Initial Cycle (runs 1 time only) */
 .team-loop-track.is-running {
+  animation-name: teamScrollIntroMobile;
+  animation-iteration-count: 1;
   animation-play-state: running;
+}
+
+@media (min-width: 640px) {
+  .team-loop-track.is-running {
+    animation-name: teamScrollIntroDesktop;
+  }
+}
+
+/* Permanent Infinite Marquee (after 1st cycle completes) */
+.team-loop-track.is-continuous {
+  animation-name: teamScrollInfinite !important;
+  animation-iteration-count: infinite !important;
+  animation-play-state: running !important;
 }
 
 /* Pause scroll when cursor hovers over the track */

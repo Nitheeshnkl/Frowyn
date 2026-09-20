@@ -1302,6 +1302,15 @@
     if (!window._teamObserverInit) {
       window._teamObserverInit = true;
       let hasStarted = false;
+
+      // When the initial cycle finishes, switch once and permanently to the seamless infinite marquee
+      grid.addEventListener('animationend', function onInitialCycleEnd(e) {
+        if (grid.classList.contains('is-running') && !grid.classList.contains('is-continuous')) {
+          grid.classList.remove('is-running');
+          grid.classList.add('is-continuous');
+        }
+      });
+
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting && !hasStarted) {
