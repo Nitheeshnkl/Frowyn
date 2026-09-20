@@ -1297,6 +1297,21 @@
     // Render set 1 + set 2 to create a seamless, infinite loop
     const fullSet = [...team, ...team];
     grid.innerHTML = fullSet.map(member => buildCard(member)).join('');
+
+    // Ensure Founder Nitheesh is positioned centrally on first entry before starting marquee
+    if (!window._teamObserverInit) {
+      window._teamObserverInit = true;
+      let hasStarted = false;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !hasStarted) {
+            hasStarted = true;
+            grid.classList.add('is-running');
+          }
+        });
+      }, { threshold: 0.15 });
+      observer.observe(section);
+    }
   }
 
   function handleRouting() {

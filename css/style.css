@@ -1177,10 +1177,15 @@ div[class*="rounded-full"][class*="bg-gradient-to-tr from-blue"] {
   display: flex;
   width: max-content;
   animation: teamScroll 32s linear infinite;
+  animation-play-state: paused;
   will-change: transform;
+}
+
+.team-loop-track.is-running {
+  animation-play-state: running;
 }
 
 /* Pause scroll when cursor hovers over the track */
 .team-carousel-mask:hover .team-loop-track {
-  animation-play-state: paused;
+  animation-play-state: paused !important;
 }
