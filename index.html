@@ -4,22 +4,49 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta
-    content="ForWyn Enterprises — custom software engineering studio. Web applications, mobile apps, AI solutions, ERP and business systems, and high-performance digital products built for growing businesses."
-    name="description" />
-  <meta
-    content="ForWyn Enterprises, software development, custom software, web applications, mobile apps, AI solutions, Java, Spring Boot, Full Stack, ERP, business systems, API development, UI/UX"
-    name="keywords" />
-  <meta content="ForWyn Enterprises" name="author" />
-  <meta content="ForWyn Enterprises" property="og:site_name" />
-  <meta content="website" property="og:type" />
-  <meta content="ForWyn Enterprises — Software for Modern Business" property="og:title" />
-  <meta
-    content="Web apps, mobile apps, AI solutions, ERP and business systems, custom software, and modern engineering for companies ready to grow."
-    property="og:description" />
-  <meta content="summary_large_image" name="twitter:card" />
-  <meta content="ForWyn Enterprises" name="twitter:title" />
-  <title>ForWyn Enterprises — Custom Software, Web, Mobile &amp; AI Solutions</title>
+
+  <!-- ============================================================
+       SEO CORE
+  ============================================================ -->
+  <title>Custom Software Development Company | ForWyn Enterprises</title>
+
+  <meta name="description"
+    content="ForWyn Enterprises builds custom software, ERP systems, retail POS platforms, and full-stack web applications using Java Spring Boot and React — engineered for businesses ready to scale." />
+
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="ForWyn Enterprises" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://forwyn.com/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png" />
+  <link rel="icon" href="/assets/favicon_io/favicon.ico" />
+  <link rel="manifest" href="/assets/favicon_io/site.webmanifest" />
+
+  <!-- ============================================================
+       OPEN GRAPH (LinkedIn, WhatsApp, Facebook)
+  ============================================================ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ForWyn Enterprises" />
+  <meta property="og:url" content="https://forwyn.com/" />
+  <meta property="og:title" content="Custom Software Development Company | ForWyn Enterprises" />
+  <meta property="og:description"
+    content="Custom ERP systems, retail POS software, full-stack web applications, and AI automation — built on Java Spring Boot and React for businesses ready to replace legacy systems." />
+  <meta property="og:image" content="https://forwyn.com/assets/images/forwyn-og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="ForWyn Enterprises — Custom Software Development" />
+
+  <!-- ============================================================
+       TWITTER / X CARD
+  ============================================================ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Custom Software Development Company | ForWyn Enterprises" />
+  <meta name="twitter:description"
+    content="Custom ERP, POS software, and full-stack web applications built on Java Spring Boot and React. ForWyn Enterprises — engineering for businesses ready to scale." />
+  <meta name="twitter:url" content="https://forwyn.com/" />
+  <meta name="twitter:image" content="https://forwyn.com/assets/images/forwyn-og-image.png" />
 
   <!-- Tailwind CSS CDN with plugins -->
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -76,6 +103,65 @@
 
   <!-- Extracted Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ============================================================
+       JSON-LD STRUCTURED DATA
+       Tells search engines exactly what ForWyn is and does.
+       No invented data — only factual, auditable claims.
+  ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forwyn.com/#organization",
+        "name": "ForWyn Enterprises",
+        "url": "https://forwyn.com/",
+        "email": "forwynenterprises@gmail.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://forwyn.com/assets/images/Forwyn_Logo.jpeg"
+        },
+        "sameAs": [
+          "https://www.instagram.com/forwynenterprises",
+          "https://www.linkedin.com/in/nitheesh-vellaiyan-996159256"
+        ],
+        "description": "ForWyn Enterprises is a custom software development company specializing in full-stack web applications, ERP systems, retail POS software, and AI-powered business automation, built on Java Spring Boot and React."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://forwyn.com/#website",
+        "url": "https://forwyn.com/",
+        "name": "ForWyn Enterprises",
+        "publisher": {
+          "@id": "https://forwyn.com/#organization"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://forwyn.com/#service",
+        "name": "ForWyn Enterprises — Custom Software Development",
+        "url": "https://forwyn.com/",
+        "provider": {
+          "@id": "https://forwyn.com/#organization"
+        },
+        "serviceType": [
+          "Custom Software Development",
+          "Custom Web Application Development",
+          "E-Commerce Development",
+          "Customer and Member Portals",
+          "Custom ERP Software Development",
+          "Retail POS Software Development",
+          "AI and Business Process Automation",
+          "Java Spring Boot Development",
+          "React and TypeScript Development"
+        ],
+        "description": "Custom software development company engineering web applications, e-commerce platforms, customer portals, custom ERP systems, retail POS software, and workflow automation. Built on Java Spring Boot, React, TypeScript, PostgreSQL, and MySQL."
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body class="bg-[#07090e] text-[#cbd5e1] antialiased selection:bg-cyan-500 selection:text-black">
@@ -92,14 +178,18 @@
     <div id="hero-nav" class="pointer-events-auto w-full">
       <div class="max-w-7xl mx-auto px-6 sm:px-10 flex items-center justify-between py-6">
         <!-- LEFT: Prominent Brand Logo & Name (ENLARGED VISUAL FIX) -->
-        <a aria-label="ForWyn Enterprises — home" class="flex items-center gap-3 group shrink-0 hero-brand-target" href="#hero">
-          <img alt="ForWyn Enterprises logo"
-            class="h-10 w-10 sm:h-12 sm:w-12 object-cover rounded-xl border-2 border-cyan-400/40 shadow-[0_0_16px_rgba(6,182,212,0.35)] transition-transform group-hover:scale-105"
-            src="assets/images/Forwyn_Logo.jpeg" />
+        <!-- AFTER: Seamless Brand Emblem -->
+        <a aria-label="ForWyn Enterprises — home" class="flex items-center gap-3.5 group shrink-0 hero-brand-target"
+          href="#hero">
+          <div
+            class="relative flex items-center justify-center h-10 w-10 sm:h-11 sm:w-11 rounded-xl bg-[#0c1017] border border-cyan-500/30 p-1.5 shadow-[0_0_20px_rgba(6,182,212,0.25)] transition-all group-hover:border-cyan-400 group-hover:shadow-[0_0_25px_rgba(6,182,212,0.45)]">
+            <img alt="ForWyn Enterprises logo"
+              class="h-full w-full object-contain filter contrast-110 group-hover:scale-105 transition-transform"
+              src="assets/images/Forwyn_Logo.jpeg" />
+          </div>
           <div class="flex flex-col">
             <span
               class="font-heading font-black text-xl sm:text-2xl tracking-wider text-white group-hover:text-cyan-300 transition-colors leading-none">FORWYN</span>
-            <span class="text-[9px] font-mono tracking-widest text-cyan-400 uppercase mt-0.5">ENTERPRISES</span>
           </div>
         </a>
         <!-- CENTER: Desktop Nav Links -->
@@ -231,46 +321,49 @@
           class="reveal-hero inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-cyan-500/30 bg-[#0c1017]/90 shadow-[0_0_15px_rgba(6,182,212,0.15)] backdrop-blur text-xs tracking-wider uppercase text-cyan-300 mb-8"
           data-hs="1">
           <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee] animate-pulse"></span>
-          Modern Software Engineering
+          Custom Software Development Studio
         </div>
         <h1
           class="reveal-hero font-heading font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white uppercase leading-[0.95] mb-8"
           data-hs="2">
-          Build What <br class="hidden sm:inline" />Moves You Forward.
+          Custom Software Engineering <br class="hidden sm:inline" />For Scalable Growth.
         </h1>
         <p class="reveal-hero max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-slate-300 font-normal leading-relaxed mb-10"
           data-hs="3">
-          Web applications, mobile apps, AI solutions, and business software engineered for companies ready to scale.
-          From concept to deployment, we build digital products that deliver results.
+          We engineer custom web applications, business websites, e-commerce platforms, internal operational tools, and
+          custom ERP systems built around real business workflows.
         </p>
         <div class="reveal-hero flex flex-col sm:flex-row items-center justify-center gap-4" data-hs="4">
           <a class="cta-hover w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white text-black font-heading font-semibold text-sm uppercase tracking-wide hover:bg-[#2B59FF] hover:text-white transition-colors shadow-[0_0_24px_rgba(37,99,235,0.4)] hover:shadow-[0_0_35px_rgba(43,89,255,0.6)] btn-magnetic"
             href="#contact">
-            <span class="cta-label">Build Your Win</span>
+            <span class="cta-label">Start Custom Build</span>
             <svg class="cta-arrow w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
           </a>
           <a class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full border border-cyan-500/30 bg-[#0c1017]/80 hover:bg-[#101722] hover:border-cyan-400 text-white font-heading font-semibold text-sm uppercase tracking-wide transition-all shadow-[0_0_20px_rgba(6,182,212,0.1)]"
             href="#works">
-            See Our Work
+            Explore Projects
           </a>
         </div>
       </div>
     </section>
 
     <!-- SECTION 02: STATEMENT & MARQUEE -->
-    <section data-section="statement" class="py-16 border-b border-cyan-500/15 bg-[#090d14] overflow-hidden" id="client-marquee">
+    <section data-section="statement" class="py-16 border-b border-cyan-500/15 bg-[#090d14] overflow-hidden"
+      id="client-marquee">
       <div id="client-marquee-container" class="mb-12"></div>
       <div class="container mx-auto px-6 max-w-5xl text-center">
-        <h2 class="font-heading font-black text-2xl sm:text-4xl md:text-5xl text-white uppercase tracking-tight leading-tight">
-          DIGITAL PRODUCTS BUILT AROUND REAL BUSINESS PROBLEMS.
+        <h2
+          class="font-heading font-black text-2xl sm:text-4xl md:text-5xl text-white uppercase tracking-tight leading-tight">
+          CUSTOM SOFTWARE DEVELOPMENT &amp; ENTERPRISE SYSTEMS CRAFTED FOR IMPACT.
         </h2>
       </div>
     </section>
 
     <!-- SECTION 03: METRICS (REPOSITIONED: Immediately follows the statement above) -->
-    <section data-section="metrics" class="py-24 border-b border-cyan-500/15 bg-[#07090e] relative overflow-hidden" id="metrics-section">
+    <section data-section="metrics" class="py-24 border-b border-cyan-500/15 bg-[#07090e] relative overflow-hidden"
+      id="metrics-section">
       <div class="absolute right-10 top-12 opacity-80 pointer-events-none hidden md:block">
         <div class="chrome-orb w-28 h-28 rounded-full"></div>
       </div>
@@ -283,9 +376,12 @@
     <section data-section="services" class="py-28 border-b border-cyan-500/15 bg-[#090d14]" id="services">
       <div class="container mx-auto px-6 max-w-6xl">
         <div class="text-center max-w-3xl mx-auto mb-20">
-          <span class="text-xs tracking-widest font-heading font-bold uppercase text-cyan-400">Capabilities &amp; Practice</span>
-          <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase mt-2 mb-4 tracking-tight">ENGINEERED FOR OUTCOMES</h2>
-          <p class="text-slate-300 text-sm sm:text-base">Modern architectures crafted to replace legacy fragility with frictionless sovereign systems.</p>
+          <span class="text-xs tracking-widest font-heading font-bold uppercase text-cyan-400">Engineering
+            Capabilities</span>
+          <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase mt-2 mb-4 tracking-tight">
+            FULL-STACK SOFTWARE ENGINEERING SERVICES</h2>
+          <p class="text-slate-300 text-sm sm:text-base">From custom web application development and ERP software to AI
+            automation and cloud systems, we engineer reliable digital products.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fx-group" id="services-grid"></div>
       </div>
@@ -296,10 +392,12 @@
       <div class="container mx-auto px-6 max-w-6xl">
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
-            <span class="text-xs tracking-widest font-heading font-bold uppercase text-cyan-400">Portfolio</span>
-            <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase mt-2 tracking-tight">FEATURED BUILDS</h2>
+            <span class="text-xs tracking-widest font-heading font-bold uppercase text-cyan-400">Case Studies</span>
+            <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase mt-2 tracking-tight">FEATURED
+              PROJECTS</h2>
           </div>
-          <p class="text-slate-300 text-sm max-w-md">Every release represents an engineering benchmark: high speed, clean codebases, and verified ROI.</p>
+          <p class="text-slate-300 text-sm max-w-md">Proven software engineering deliverables featuring Java Spring Boot
+            backend infrastructure, React TypeScript applications, and custom POS systems.</p>
         </div>
         <div id="recent-works" class="space-y-16 fx-group"></div>
       </div>
@@ -311,7 +409,8 @@
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
             <span class="text-xs tracking-widest font-heading font-bold uppercase text-cyan-400">Portfolio</span>
-            <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase mt-2 tracking-tight">ALL WORKS</h2>
+            <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase mt-2 tracking-tight">ALL WORKS
+            </h2>
           </div>
           <p class="text-slate-300 text-sm max-w-md">Every release represents an engineering benchmark.</p>
         </div>
@@ -328,18 +427,23 @@
     <section data-section="plans" class="py-28 border-b border-cyan-500/15 bg-[#090d14] relative" id="plans">
       <div class="container mx-auto px-6 max-w-6xl">
         <div class="text-center max-w-3xl mx-auto mb-20">
-          <span class="text-xs tracking-widest font-heading font-bold uppercase text-cyan-400">Clear Engagements</span>
-          <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase mt-2 mb-4 tracking-tight">CHOOSE YOUR BUILD.</h2>
-          <p class="text-slate-300 text-sm sm:text-base">Transparent tiering designed to take your venture from validation to full sovereign scale.</p>
+          <span class="text-xs tracking-widest font-heading font-bold uppercase text-cyan-400">Development
+            Packages</span>
+          <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase mt-2 mb-4 tracking-tight">
+            TRANSPARENT
+            SOFTWARE ENGAGEMENTS</h2>
+          <p class="text-slate-300 text-sm sm:text-base">Flexible engagement models for custom MVP launches, full-stack
+            web applications, custom ERP software, and dedicated engineering pods.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- Tier 1: Starter -->
-          <div class="bg-[#0c1017] border border-cyan-500/20 rounded-3xl p-7 flex flex-col justify-between hover:border-cyan-400 hover:shadow-[0_0_30px_rgba(6,182,212,0.18)] transition-all">
+          <div
+            class="bg-[#0c1017] border border-cyan-500/20 rounded-3xl p-7 flex flex-col justify-between hover:border-cyan-400 hover:shadow-[0_0_30px_rgba(6,182,212,0.18)] transition-all">
             <div>
               <div class="text-xs font-heading font-bold uppercase tracking-widest text-cyan-400 mb-3">Tier 01</div>
               <h3 class="text-2xl font-heading font-black text-white uppercase mb-1">Starter</h3>
-              <div class="text-2xl font-heading font-extrabold text-white my-4">₹15K – 35K</div>
+              <div class="text-2xl font-heading font-extrabold text-white my-4">₹20K – 60K</div>
               <p class="text-xs text-slate-400 mb-6 leading-relaxed">
                 Ideal for fast MVP launches, interactive landing flagships, and focused single-purpose tools.
               </p>
@@ -350,58 +454,69 @@
                 <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Standard 2-week Sprint</li>
               </ul>
             </div>
-            <button data-plan-id="starter" onclick="selectPlan('starter')" class="w-full py-3 rounded-full border border-cyan-500/30 bg-[#101722] hover:bg-cyan-400 hover:text-black hover:border-cyan-400 transition-all text-center text-xs font-heading font-bold uppercase tracking-wider">
+            <button data-plan-id="starter" onclick="selectPlan('starter')"
+              class="w-full py-3 rounded-full border border-cyan-500/30 bg-[#101722] hover:bg-cyan-400 hover:text-black hover:border-cyan-400 transition-all text-center text-xs font-heading font-bold uppercase tracking-wider">
               Select Starter
             </button>
           </div>
 
           <!-- Tier 2: Grow -->
-          <div class="bg-[#0c1017] border-2 border-cyan-400/80 rounded-3xl p-7 flex flex-col justify-between relative shadow-[0_0_40px_rgba(6,182,212,0.25)] hover:border-cyan-300 transition-all">
-            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-cyan-400 to-blue-500 text-black px-3.5 py-1 rounded-full text-[10px] font-heading font-black tracking-widest uppercase shadow-[0_0_15px_rgba(34,211,238,0.6)]">
+          <div
+            class="bg-[#0c1017] border-2 border-cyan-400/80 rounded-3xl p-7 flex flex-col justify-between relative shadow-[0_0_40px_rgba(6,182,212,0.25)] hover:border-cyan-300 transition-all">
+            <div
+              class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-cyan-400 to-blue-500 text-black px-3.5 py-1 rounded-full text-[10px] font-heading font-black tracking-widest uppercase shadow-[0_0_15px_rgba(34,211,238,0.6)]">
               POPULAR
             </div>
             <div>
               <div class="text-xs font-heading font-bold uppercase tracking-widest text-cyan-300 mb-3">Tier 02</div>
               <h3 class="text-2xl font-heading font-black text-white uppercase mb-1">Grow</h3>
-              <div class="text-2xl font-heading font-extrabold text-white my-4">₹45K – 75K</div>
+              <div class="text-2xl font-heading font-extrabold text-white my-4">₹80K – ₹1.50LK</div>
               <p class="text-xs text-slate-300 mb-6 leading-relaxed">
                 Full-featured custom web applications, SaaS dashboards, and automated client portals.
               </p>
               <ul class="space-y-3 text-xs text-slate-200 border-t border-cyan-500/20 pt-6 mb-8">
                 <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Full-stack JAVA/MERN</li>
-                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Database &amp; Auth Pipelines</li>
+                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Database &amp; Auth Pipelines
+                </li>
                 <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Payment Gateway Setup</li>
                 <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> 4-week Delivery Cycle</li>
               </ul>
             </div>
-            <button data-plan-id="grow" onclick="selectPlan('grow')" class="w-full py-3 rounded-full bg-cyan-400 text-black hover:bg-white transition-all text-center text-xs font-heading font-bold uppercase tracking-wider shadow-[0_0_20px_rgba(6,182,212,0.5)]">
+            <button data-plan-id="grow" onclick="selectPlan('grow')"
+              class="w-full py-3 rounded-full bg-cyan-400 text-black hover:bg-white transition-all text-center text-xs font-heading font-bold uppercase tracking-wider shadow-[0_0_20px_rgba(6,182,212,0.5)]">
               Select Grow
             </button>
           </div>
 
           <!-- Tier 3: Scale -->
-          <div class="bg-[#0c1017] border border-cyan-500/20 rounded-3xl p-7 flex flex-col justify-between hover:border-blue-400 hover:shadow-[0_0_30px_rgba(37,99,235,0.22)] transition-all">
+          <div
+            class="bg-[#0c1017] border border-cyan-500/20 rounded-3xl p-7 flex flex-col justify-between hover:border-blue-400 hover:shadow-[0_0_30px_rgba(37,99,235,0.22)] transition-all">
             <div>
               <div class="text-xs font-heading font-bold uppercase tracking-widest text-blue-400 mb-3">Tier 03</div>
               <h3 class="text-2xl font-heading font-black text-white uppercase mb-1">Scale</h3>
-              <div class="text-2xl font-heading font-extrabold text-white my-4">₹80K – 1.10L</div>
+              <div class="text-2xl font-heading font-extrabold text-white my-4">1.50L +</div>
               <p class="text-xs text-slate-400 mb-6 leading-relaxed">
-                High-throughput operational business operating systems, ERP replacements, and Web3 integrations.
+                High-throughput operational business operating systems, custom ERP replacements, and retail POS
+                software.
               </p>
               <ul class="space-y-3 text-xs text-slate-300 border-t border-cyan-500/15 pt-6 mb-8">
                 <li class="flex items-center gap-2"><span class="text-blue-400">✓</span> Advanced Role Architecture</li>
-                <li class="flex items-center gap-2"><span class="text-blue-400">✓</span> Smart Contract or AI Layer</li>
-                <li class="flex items-center gap-2"><span class="text-blue-400">✓</span> 99.9% Fault-tolerant Infra</li>
-                <li class="flex items-center gap-2"><span class="text-blue-400">✓</span> 6-8 week Comprehensive</li>
+                <li class="flex items-center gap-2"><span class="text-blue-400">✓</span> AI Automation &amp; Workflow
+                  Layer</li>
+                <li class="flex items-center gap-2"><span class="text-blue-400">✓</span> High-Availability
+                  Infrastructure</li>
+                <li class="flex items-center gap-2"><span class="text-blue-400">✓</span> Phased Milestone Delivery</li>
               </ul>
             </div>
-            <button data-plan-id="scale" onclick="selectPlan('scale')" class="w-full py-3 rounded-full border border-cyan-500/30 bg-[#101722] hover:bg-blue-500 hover:text-white hover:border-blue-400 transition-all text-center text-xs font-heading font-bold uppercase tracking-wider">
+            <button data-plan-id="scale" onclick="selectPlan('scale')"
+              class="w-full py-3 rounded-full border border-cyan-500/30 bg-[#101722] hover:bg-blue-500 hover:text-white hover:border-blue-400 transition-all text-center text-xs font-heading font-bold uppercase tracking-wider">
               Select Scale
             </button>
           </div>
 
           <!-- Tier 4: Custom -->
-          <div class="bg-[#0c1017] border border-cyan-500/20 rounded-3xl p-7 flex flex-col justify-between hover:border-cyan-400 hover:shadow-[0_0_30px_rgba(6,182,212,0.18)] transition-all">
+          <div
+            class="bg-[#0c1017] border border-cyan-500/20 rounded-3xl p-7 flex flex-col justify-between hover:border-cyan-400 hover:shadow-[0_0_30px_rgba(6,182,212,0.18)] transition-all">
             <div>
               <div class="text-xs font-heading font-bold uppercase tracking-widest text-cyan-400 mb-3">Tier 04</div>
               <h3 class="text-2xl font-heading font-black text-white uppercase mb-1">Custom</h3>
@@ -412,24 +527,29 @@
               <ul class="space-y-3 text-xs text-slate-300 border-t border-cyan-500/15 pt-6 mb-8">
                 <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Dedicated Engineering Pod</li>
                 <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Continuous Deployment</li>
-                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Custom SLA &amp; Dedicated Lead</li>
+                <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> Custom SLA &amp; Dedicated Lead
+                </li>
                 <li class="flex items-center gap-2"><span class="text-cyan-400">✓</span> On-demand Scalability</li>
               </ul>
             </div>
-            <button data-plan-id="custom" onclick="selectPlan('custom')" class="w-full py-3 rounded-full border border-cyan-500/30 bg-[#101722] hover:bg-white hover:text-black transition-all text-center text-xs font-heading font-bold uppercase tracking-wider">
+            <button data-plan-id="custom" onclick="selectPlan('custom')"
+              class="w-full py-3 rounded-full border border-cyan-500/30 bg-[#101722] hover:bg-white hover:text-black transition-all text-center text-xs font-heading font-bold uppercase tracking-wider">
               Inquire Custom
             </button>
           </div>
         </div>
 
-        <div class="mt-12 p-6 rounded-2xl bg-[#0c1017]/60 border border-cyan-500/25 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left shadow-[0_0_25px_rgba(6,182,212,0.08)]">
+        <div
+          class="mt-12 p-6 rounded-2xl bg-[#0c1017]/60 border border-cyan-500/25 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left shadow-[0_0_25px_rgba(6,182,212,0.08)]">
           <div class="flex items-center gap-4">
             <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee]"></span>
             <p class="text-xs sm:text-sm text-slate-300">
-              <span class="font-bold text-white">Need an exact scoping appraisal?</span> Every project gets a complimentary architectural breakdown.
+              <span class="font-bold text-white">Need an exact scoping appraisal?</span> Every project gets a
+              complimentary architectural breakdown.
             </p>
           </div>
-          <a class="text-xs font-heading font-bold uppercase tracking-wider text-cyan-300 underline underline-offset-4 hover:text-white transition-colors shrink-0" href="#contact">
+          <a class="text-xs font-heading font-bold uppercase tracking-wider text-cyan-300 underline underline-offset-4 hover:text-white transition-colors shrink-0"
+            href="#contact">
             Request Architecture Audit →
           </a>
         </div>
@@ -437,26 +557,42 @@
     </section>
 
     <!-- SECTION 07: TEAM -->
-    <section data-section="team" class="py-28 border-b border-cyan-500/15 bg-[#07090e]" id="team">
-      <div class="container mx-auto px-6 max-w-6xl">
-        <div class="text-center max-w-3xl mx-auto mb-20">
-          <span class="text-xs tracking-widest font-heading font-bold uppercase text-cyan-400">The Architects</span>
-          <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase mt-2 mb-4 tracking-tight">MEET OUR TEAM.</h2>
-          <p class="text-slate-300 text-sm sm:text-base">Specialists who prioritize clean structure, mathematical symmetry, and robust software over hype.</p>
+    <section data-section="team" class="py-28 border-b border-cyan-500/15 bg-[#07090e] overflow-hidden" id="team">
+      <div class="container mx-auto px-6 max-w-6xl mb-16 text-center">
+        <span class="text-xs tracking-widest font-heading font-bold uppercase text-cyan-400">The Architects</span>
+        <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase mt-2 mb-4 tracking-tight">MEET OUR
+          TEAM.</h2>
+        <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">Specialists directing core architecture, system
+          stability, and client delivery across every build.</p>
+      </div>
+
+      <!-- Infinite Auto-Scrolling Track with Gradient Edge Masks (No Clipping) -->
+      <div class="team-carousel-mask relative w-full overflow-hidden py-4">
+        <!-- Edge Fade Masks -->
+        <div
+          class="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 z-10 bg-gradient-to-r from-[#07090e] to-transparent">
         </div>
-        <div class="fx-group grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="team-grid"></div>
+        <div
+          class="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 z-10 bg-gradient-to-l from-[#07090e] to-transparent">
+        </div>
+
+        <!-- Animated Looping Track -->
+        <div class="team-loop-track flex items-stretch gap-6 w-max" id="team-grid"></div>
       </div>
     </section>
 
     <!-- SECTION 08: REVIEWS -->
-    <section data-section="reviews" class="py-28 border-b border-cyan-500/15 bg-[#090d14] relative overflow-hidden" id="reviews">
+    <section data-section="reviews" class="py-28 border-b border-cyan-500/15 bg-[#090d14] relative overflow-hidden"
+      id="reviews">
       <div class="absolute right-12 top-8 pointer-events-none hidden md:block">
         <div class="chrome-orb w-32 h-32 rounded-full opacity-90 animate-float-slow"></div>
       </div>
       <div class="container mx-auto px-6 max-w-6xl relative z-10">
         <div class="text-center max-w-3xl mx-auto mb-20">
-          <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase tracking-tight">CLIENT REVIEWS &amp; FEEDBACK.</h2>
-          <p class="text-slate-300 text-sm sm:text-base mt-3">From product owners and partners across our software deployments.</p>
+          <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase tracking-tight">CLIENT REVIEWS
+            &amp; FEEDBACK.</h2>
+          <p class="text-slate-300 text-sm sm:text-base mt-3">From product owners and partners across our software
+            deployments.</p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="reviews-grid"></div>
       </div>
@@ -466,12 +602,13 @@
     <section data-section="faq" class="py-28 border-b border-cyan-500/15 bg-[#07090e] relative" id="faq">
       <div class="container mx-auto px-6 max-w-6xl">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          <div class="lg:col-span-4 sticky top-28">
+          <div class="lg:col-span-4 lg:sticky lg:top-28">
             <div class="mb-8 hidden lg:block">
               <div class="chrome-torus animate-spin-slow"></div>
             </div>
             <span class="text-xs tracking-widest font-heading font-bold uppercase text-cyan-400">Got Questions?</span>
-            <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase mt-2 mb-4 tracking-tight">QUESTIONS BEFORE THE BUILD?</h2>
+            <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase mt-2 mb-4 tracking-tight">
+              QUESTIONS BEFORE THE BUILD?</h2>
             <p class="text-slate-300 text-sm leading-relaxed">
               We've answered the most common questions to help you get started with absolute confidence.
             </p>
@@ -479,33 +616,73 @@
 
           <div class="lg:col-span-8 space-y-3" id="faq-container">
             <!-- Item 1 -->
-            <div class="faq-item border border-cyan-500/20 rounded-2xl bg-[#0c1017]/80 overflow-hidden transition-all hover:border-cyan-400/50">
-              <button class="w-full p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-white uppercase text-base sm:text-lg focus:outline-none" onclick="toggleFaq(this)" aria-expanded="false">
-                <span>WHAT SERVICES DOES FORWYN OFFER?</span>
-                <span class="icon-toggle w-8 h-8 rounded-full border border-cyan-500/30 flex items-center justify-center text-sm font-normal bg-[#101722] text-cyan-300 shrink-0 transition-transform">＋</span>
+            <div
+              class="faq-item border border-cyan-500/20 rounded-2xl bg-[#0c1017]/80 overflow-hidden transition-all hover:border-cyan-400/50">
+              <button
+                class="w-full p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-white uppercase text-base sm:text-lg focus:outline-none"
+                onclick="toggleFaq(this)" aria-expanded="false">
+                <span>WHAT DOES FORWYN BUILD?</span>
+                <span
+                  class="icon-toggle w-8 h-8 rounded-full border border-cyan-500/30 flex items-center justify-center text-sm font-normal bg-[#101722] text-cyan-300 shrink-0 transition-transform">＋</span>
               </button>
               <div class="faq-answer px-6 pb-6 text-sm text-slate-300 leading-relaxed hidden">
-                We specialize in custom digital product engineering, operational business software (custom ERPs, POS systems, inventory management), AI automations, and high-performance Web3 applications.
+                ForWyn develops custom software tailored to specific business requirements, including custom web
+                applications, e-commerce websites and online stores, business websites, customer and member portals,
+                internal business tools, custom ERP software, retail POS systems, workflow automation, and AI-enabled
+                business workflows. Each solution is built around the actual workflows of the business rather than
+                forcing a generic template.
               </div>
             </div>
             <!-- Item 2 -->
-            <div class="faq-item border border-cyan-500/20 rounded-2xl bg-[#0c1017]/80 overflow-hidden transition-all hover:border-cyan-400/50">
-              <button class="w-full p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-white uppercase text-base sm:text-lg focus:outline-none" onclick="toggleFaq(this)" aria-expanded="false">
-                <span>HOW LONG DOES A TYPICAL BUILD TAKE?</span>
-                <span class="icon-toggle w-8 h-8 rounded-full border border-cyan-500/30 flex items-center justify-center text-sm font-normal bg-[#101722] text-cyan-300 shrink-0 transition-transform">＋</span>
+            <div
+              class="faq-item border border-cyan-500/20 rounded-2xl bg-[#0c1017]/80 overflow-hidden transition-all hover:border-cyan-400/50">
+              <button
+                class="w-full p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-white uppercase text-base sm:text-lg focus:outline-none"
+                onclick="toggleFaq(this)" aria-expanded="false">
+                <span>HOW DOES FORWYN APPROACH A CUSTOM SOFTWARE PROJECT?</span>
+                <span
+                  class="icon-toggle w-8 h-8 rounded-full border border-cyan-500/30 flex items-center justify-center text-sm font-normal bg-[#101722] text-cyan-300 shrink-0 transition-transform">＋</span>
               </button>
               <div class="faq-answer px-6 pb-6 text-sm text-slate-300 leading-relaxed hidden">
-                Starter MVPs ship in 2 weeks. Comprehensive custom software systems or company dashboards typically run across 4 to 8 week execution cycles with bi-weekly test deployments.
+                We follow a structured engineering lifecycle designed for transparency and milestone clarity: Discovery
+                → Requirements Definition → System Architecture → UI/UX Design → Development Sprints → Quality Assurance
+                (QA) → User Acceptance Testing (UAT) → Production Deployment → Maintenance. Clients participate in
+                regular milestone reviews and testing demos throughout the build.
               </div>
             </div>
             <!-- Item 3 -->
-            <div class="faq-item border border-cyan-500/20 rounded-2xl bg-[#0c1017]/80 overflow-hidden transition-all hover:border-cyan-400/50">
-              <button class="w-full p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-white uppercase text-base sm:text-lg focus:outline-none" onclick="toggleFaq(this)" aria-expanded="false">
-                <span>HOW DO WE GET STARTED WITH FORWYN?</span>
-                <span class="icon-toggle w-8 h-8 rounded-full border border-cyan-500/30 flex items-center justify-center text-sm font-normal bg-[#101722] text-cyan-300 shrink-0 transition-transform">＋</span>
+            <div
+              class="faq-item border border-cyan-500/20 rounded-2xl bg-[#0c1017]/80 overflow-hidden transition-all hover:border-cyan-400/50">
+              <button
+                class="w-full p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-white uppercase text-base sm:text-lg focus:outline-none"
+                onclick="toggleFaq(this)" aria-expanded="false">
+                <span>WHAT TECHNOLOGIES DOES FORWYN USE?</span>
+                <span
+                  class="icon-toggle w-8 h-8 rounded-full border border-cyan-500/30 flex items-center justify-center text-sm font-normal bg-[#101722] text-cyan-300 shrink-0 transition-transform">＋</span>
               </button>
               <div class="faq-answer px-6 pb-6 text-sm text-slate-300 leading-relaxed hidden">
-                Complete the inquiry form below or book a call. We review your requirements, prepare an initial scope matrix within 48 hours, and schedule your sprint kick-off.
+                Our core stack includes Java, Spring Boot, React, TypeScript, REST APIs, PostgreSQL, and MySQL. We
+                select technologies based on project requirements—lightweight web applications may leverage React and
+                modern APIs, while high-throughput corporate systems and ERPs use Java Spring Boot backends and
+                relational database architectures for stability and speed.
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div
+              class="faq-item border border-cyan-500/20 rounded-2xl bg-[#0c1017]/80 overflow-hidden transition-all hover:border-cyan-400/50">
+              <button
+                class="w-full p-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-white uppercase text-base sm:text-lg focus:outline-none"
+                onclick="toggleFaq(this)" aria-expanded="false">
+                <span>HOW MUCH DOES CUSTOM SOFTWARE DEVELOPMENT COST?</span>
+                <span
+                  class="icon-toggle w-8 h-8 rounded-full border border-cyan-500/30 flex items-center justify-center text-sm font-normal bg-[#101722] text-cyan-300 shrink-0 transition-transform">＋</span>
+              </button>
+              <div class="faq-answer px-6 pb-6 text-sm text-slate-300 leading-relaxed hidden">
+                Custom software pricing depends on factors such as project scope, the number of workflows and user
+                roles, external API integrations, UI/UX complexity, architectural requirements, and ongoing deployment
+                or maintenance needs. We offer transparent package tiers for standard requirements as well as scoped
+                technical proposals for complex systems. Submit your requirements through our consultation form to
+                receive an architectural scope and estimate.
               </div>
             </div>
           </div>
@@ -517,97 +694,192 @@
     <section data-section="insights" class="py-28 border-b border-cyan-500/15 bg-[#090d14] relative" id="insights">
       <div class="container mx-auto px-6 max-w-6xl">
         <div class="max-w-3xl mb-12">
-          <span class="text-xs tracking-widest font-heading font-bold uppercase text-cyan-400">Knowledge Base</span>
-          <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase mt-2 mb-4 tracking-tight">FORWYN INSIGHTS.</h2>
-          <p class="text-slate-300 text-sm sm:text-base">Stay updated with software architecture, business efficiency heuristics, and enterprise toolchains.</p>
+          <span class="text-xs tracking-widest font-heading font-bold uppercase text-cyan-400">Engineering
+            Insights</span>
+          <h2 class="text-4xl sm:text-5xl font-heading font-black text-white uppercase mt-2 mb-4 tracking-tight">
+            SOFTWARE
+            DEVELOPMENT INSIGHTS</h2>
+          <p class="text-slate-300 text-sm sm:text-base">Technical articles and operational guides on custom software
+            architecture, enterprise ERP transitions, and cloud system scalability.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <article class="bg-[#0c1017]/70 border border-cyan-500/20 rounded-3xl overflow-hidden group hover:border-cyan-400 hover:shadow-[0_0_30px_rgba(6,182,212,0.2)] transition-all flex flex-col justify-between p-6">
+
+          <!-- Card 1: Custom Software Architecture -->
+          <article
+            class="bg-[#0c1017]/70 border border-cyan-500/20 rounded-3xl overflow-hidden group hover:border-cyan-400 hover:shadow-[0_0_30px_rgba(6,182,212,0.2)] transition-all flex flex-col justify-between p-6">
             <div>
-              <img src="./Forwyn_Logo.jpeg" alt="">
+              <div class="w-full h-44 rounded-2xl overflow-hidden mb-5 border border-cyan-500/20">
+                <img src="assets/images/custom software.jpeg" alt="Custom software engineering architecture"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy" />
+              </div>
               <div class="text-xs font-mono text-cyan-400 mb-2">ARCHITECTURE</div>
-              <h3 class="text-xl font-heading font-black text-white uppercase leading-snug group-hover:text-cyan-300 transition-colors">
+              <h3
+                class="text-xl font-heading font-black text-white uppercase leading-snug group-hover:text-cyan-300 transition-colors">
                 WHEN SHOULD A BUSINESS BUILD CUSTOM SOFTWARE?
               </h3>
               <p class="text-slate-300 text-xs mt-3 leading-relaxed">
-                Off-the-shelf SaaS carries hidden tax in workflow friction. Here is the operational calculation to determine when custom code generates higher ROI.
+                Off-the-shelf SaaS carries hidden tax in workflow friction. Here is the operational calculation to
+                determine when custom code generates higher ROI.
               </p>
             </div>
-            <div class="pt-6">
-              <a class="inline-flex items-center gap-2 text-xs font-heading font-bold uppercase text-cyan-300 hover:text-white hover:underline" href="#contact">
-                Read Analysis →
+            <div class="pt-6 border-t border-cyan-500/15 mt-6">
+              <a class="inline-flex items-center gap-2 text-xs font-heading font-bold uppercase text-cyan-300 hover:text-white hover:underline transition-colors"
+                href="https://softwaremind.com/blog/when-should-you-consider-custom-software-development/"
+                target="_blank" rel="noopener noreferrer">
+                <span>Read Analysis</span>
+                <span class="text-cyan-400 group-hover:translate-x-1 transition-transform">↗</span>
               </a>
             </div>
           </article>
 
-          <article class="bg-[#0c1017]/70 border border-cyan-500/20 rounded-3xl overflow-hidden group hover:border-blue-400 hover:shadow-[0_0_30px_rgba(37,99,235,0.25)] transition-all flex flex-col justify-between p-6">
+          <!-- Card 2: Database & ERP Architecture -->
+          <article
+            class="bg-[#0c1017]/70 border border-cyan-500/20 rounded-3xl overflow-hidden group hover:border-blue-400 hover:shadow-[0_0_30px_rgba(37,99,235,0.25)] transition-all flex flex-col justify-between p-6">
             <div>
+              <div class="w-full h-44 rounded-2xl overflow-hidden mb-5 border border-blue-500/20">
+                <img src="assets/images/erp.jpeg" alt="Database and ERP analytics dashboard"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy" />
+              </div>
               <div class="text-xs font-mono text-blue-400 mb-2">DATABASE DESIGN</div>
-              <h3 class="text-xl font-heading font-black text-white uppercase leading-snug group-hover:text-blue-300 transition-colors">
+              <h3
+                class="text-xl font-heading font-black text-white uppercase leading-snug group-hover:text-blue-300 transition-colors">
                 ERP VS SPREADSHEETS: WHEN IS IT TIME TO SWITCH?
               </h3>
               <p class="text-slate-300 text-xs mt-3 leading-relaxed">
-                Formula errors, accidental overwrites, and permission chaos. The diagnostic signals that prove your operational spreadsheets are stifling your growth.
+                Formula errors, accidental overwrites, and permission chaos. The diagnostic signals that prove your
+                operational spreadsheets are stifling your growth.
               </p>
             </div>
-            <div class="pt-6">
-              <a class="inline-flex items-center gap-2 text-xs font-heading font-bold uppercase text-blue-300 hover:text-white hover:underline" href="#contact">
-                Read Analysis →
+            <div class="pt-6 border-t border-cyan-500/15 mt-6">
+              <a class="inline-flex items-center gap-2 text-xs font-heading font-bold uppercase text-blue-300 hover:text-white hover:underline transition-colors"
+                href="https://adatasol.com/erp-vs-spreadsheets-when-to-switch/" target="_blank"
+                rel="noopener noreferrer">
+                <span>Read Analysis</span>
+                <span class="text-blue-400 group-hover:translate-x-1 transition-transform">↗</span>
               </a>
             </div>
+          </article>
+          <!-- Card 3: Promotional Sprint Offer / Direct Call Action -->
+          <article
+            class="bg-[#0c1017]/90 border-2 border-cyan-400/80 rounded-3xl overflow-hidden group hover:border-cyan-300 hover:shadow-[0_0_35px_rgba(6,182,212,0.3)] transition-all flex flex-col justify-between p-6 relative">
+
+            <!-- Floating Offer Badge -->
+            <div class="absolute top-4 right-4 z-10">
+              <span
+                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-black text-[10px] font-heading font-black tracking-widest uppercase shadow-[0_0_15px_rgba(6,182,212,0.6)]">
+                <span class="w-1.5 h-1.5 rounded-full bg-black animate-pulse"></span>
+                LIMITED SPRINT OFFER
+              </span>
+            </div>
+
+            <div>
+              <!-- Relevant Visual with Tech Atmosphere -->
+              <div class="w-full h-44 rounded-2xl overflow-hidden mb-5 border border-cyan-500/30 relative">
+                <img src="assets/images/inshight.jpeg" alt="ForWyn Enterprises Sprint Architecture Offer"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0c1017] via-transparent to-transparent"></div>
+              </div>
+
+              <div class="text-xs font-mono text-cyan-300 font-bold mb-2 flex items-center gap-2">
+                <span>EXCLUSIVE CONSULTATION</span>
+                <span class="text-cyan-500/50">•</span>
+                <span class="text-emerald-400">FREE AUDIT</span>
+              </div>
+
+              <h3
+                class="text-xl font-heading font-black text-white uppercase leading-snug group-hover:text-cyan-300 transition-colors">
+                CLAIM A COMPLIMENTARY ARCHITECTURE &amp; SCOPING SPRINT
+              </h3>
+
+              <p class="text-slate-300 text-xs mt-3 leading-relaxed">
+                Planning your next MVP or custom business platform? Book a direct scoping call this month to get a
+                complete system architecture breakdown, tech feasibility report, and cost blueprint at zero cost.
+              </p>
+            </div>
+
+            <!-- Action Area: One-Tap Direct Call & Contact Navigation -->
+            <div
+              class="pt-6 border-t border-cyan-500/20 mt-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+              <!-- Direct Phone Dialer -->
+              <a class="flex-1 inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-cyan-400 text-black hover:bg-white text-xs font-heading font-black uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(6,182,212,0.4)] hover:shadow-[0_0_25px_rgba(255,255,255,0.6)]"
+                href="tel:+919500911807">
+                <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5"
+                  viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <span>Call Us Direct</span>
+              </a>
+
+              <!-- Jump to Contact / Booking Form -->
+              <a class="inline-flex items-center justify-center py-3 px-4 rounded-xl border border-cyan-500/30 bg-[#101722] hover:bg-cyan-500/10 text-xs font-heading font-bold text-cyan-300 uppercase tracking-wider transition-all"
+                href="#contact">
+                <span>Book Call →</span>
+              </a>
+            </div>
+
           </article>
 
-          <article class="bg-[#0c1017]/70 border border-cyan-500/20 rounded-3xl overflow-hidden group hover:border-cyan-400 hover:shadow-[0_0_30px_rgba(6,182,212,0.2)] transition-all flex flex-col justify-between p-6">
-            <div>
-              <div class="text-xs font-mono text-cyan-400 mb-2">AI AUTOMATION</div>
-              <h3 class="text-xl font-heading font-black text-white uppercase leading-snug group-hover:text-cyan-300 transition-colors">
-                WHERE CAN AI ACTUALLY SAVE YOUR TEAM TIME?
-              </h3>
-              <p class="text-slate-300 text-xs mt-3 leading-relaxed">
-                Cutting through generative AI marketing hype to implement practical natural language pipelines that eliminate manual document triage.
-              </p>
-            </div>
-            <div class="pt-6">
-              <a class="inline-flex items-center gap-2 text-xs font-heading font-bold uppercase text-cyan-300 hover:text-white hover:underline" href="#contact">
-                Read Analysis →
-              </a>
-            </div>
-          </article>
         </div>
       </div>
     </section>
 
     <!-- SECTION 11: CONTACT -->
-    <section data-section="contact" class="py-28 border-b border-cyan-500/15 bg-[#06080d] relative overflow-hidden" id="contact">
+    <section data-section="contact" class="py-28 border-b border-cyan-500/15 bg-[#06080d] relative overflow-hidden"
+      id="contact">
       <div class="container mx-auto px-6 max-w-6xl relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div class="lg:col-span-6">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-cyan-500/30 bg-[#0c1017]/90 backdrop-blur text-xs tracking-wider uppercase text-cyan-300 mb-6">
-              <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee] animate-pulse"></span>Initiate Collaboration
+            <div
+              class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-cyan-500/30 bg-[#0c1017]/90 backdrop-blur text-xs tracking-wider uppercase text-cyan-300 mb-6">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee] animate-pulse"></span>Start
+              Your Project
             </div>
-            <h2 class="font-heading font-black text-4xl sm:text-6xl text-white uppercase tracking-tight leading-[0.95] mb-6">
-              LET'S BUILD YOUR NEXT WIN.
+            <h2
+              class="font-heading font-black text-4xl sm:text-6xl text-white uppercase tracking-tight leading-[0.95] mb-6">
+              BUILD YOUR CUSTOM SOFTWARE SYSTEM.
             </h2>
             <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl font-normal">
-              Have an idea, an engineering bottleneck, or an enterprise system worth building? Tell us what you need and we'll scope the right approach.
+              Ready to scale with custom web application development, ERP systems, or business automation? Partner with
+              our software engineering team to turn your requirements into reality.
             </p>
           </div>
 
           <div class="lg:col-span-6">
-            <div class="p-8 sm:p-10 rounded-3xl bg-[#0c1017]/90 border border-cyan-500/20 backdrop-blur-md shadow-[0_0_30px_rgba(6,182,212,0.06)]" id="contact-channels">
-              <div class="text-xs font-heading font-bold uppercase tracking-widest text-cyan-400 mb-5">Direct Channels</div>
-              <a class="flex items-center gap-3 py-3 border-b border-cyan-500/15 group" id="channel-email" href="#">
-                <svg class="w-5 h-5 text-cyan-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <div
+              class="p-8 sm:p-10 rounded-3xl bg-[#0c1017]/90 border border-cyan-500/20 backdrop-blur-md shadow-[0_0_30px_rgba(6,182,212,0.06)]"
+              id="contact-channels">
+              <div class="text-xs font-heading font-bold uppercase tracking-widest text-cyan-400 mb-5">Direct Channels
+              </div>
+              <a class="flex items-center gap-3 py-3 border-b border-cyan-500/15 group" id="channel-email" href="mailto:forwynenterprises@gmail.com">
+                <svg class="w-5 h-5 text-cyan-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
                 <div class="flex-1">
                   <div class="text-[10px] font-heading font-bold uppercase tracking-widest text-slate-400">Email</div>
-                  <div class="text-sm sm:text-base font-heading font-bold text-white group-hover:text-cyan-300 transition-colors" id="channel-email-text">HELLO@FORWYN.COM</div>
+                  <div
+                    class="text-sm sm:text-base font-heading font-bold text-white group-hover:text-cyan-300 transition-colors"
+                    id="channel-email-text">forwynenterprises@gmail.com</div>
                 </div>
               </a>
-              <a class="flex items-center gap-3 py-3 border-b border-cyan-500/15 group" id="channel-call" href="#">
-                <svg class="w-5 h-5 text-cyan-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <a class="flex items-center gap-3 py-3 border-b border-cyan-500/15 group" id="channel-call" href="tel:+919500911807">
+                <svg class="w-5 h-5 text-cyan-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
                 <div class="flex-1">
                   <div class="text-[10px] font-heading font-bold uppercase tracking-widest text-slate-400">Call</div>
-                  <div class="text-sm sm:text-base font-heading font-bold text-white group-hover:text-cyan-300 transition-colors" id="channel-call-text">+91 98765 43210</div>
+                  <div
+                    class="text-sm sm:text-base font-heading font-bold text-white group-hover:text-cyan-300 transition-colors"
+                    id="channel-call-text">+91 95009 11807</div>
                 </div>
               </a>
               <div class="flex items-center gap-3 pt-5" id="contact-social"></div>
@@ -621,43 +893,67 @@
     <section data-section="inquiry" class="py-24 border-b border-cyan-500/15 bg-[#07090e]" id="inquiry">
       <div class="container mx-auto px-6 max-w-3xl">
         <div class="text-center mb-10">
-          <span class="text-xs tracking-widest font-heading font-bold uppercase text-cyan-400">Project Inquiry</span>
-          <h2 class="text-3xl sm:text-4xl font-heading font-black text-white uppercase mt-2 mb-3 tracking-tight">TELL US ABOUT YOUR PROJECT</h2>
-          <p class="text-slate-300 text-sm sm:text-base">Fill this in to send your project details directly to our team.</p>
+          <span class="text-xs tracking-widest font-heading font-bold uppercase text-cyan-400">Software Scoping
+            Inquiry</span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-black text-white uppercase mt-2 mb-3 tracking-tight">REQUEST
+            A
+            CUSTOM SOFTWARE CONSULTATION</h2>
+          <p class="text-slate-300 text-sm sm:text-base">Share your application requirements or system constraints for a
+            detailed technical proposal and architectural scoping report.
+          </p>
         </div>
 
-        <form class="space-y-6 bg-[#0c1017]/90 p-8 sm:p-10 rounded-3xl border border-cyan-500/25 backdrop-blur-md shadow-[0_0_40px_rgba(6,182,212,0.1)]" id="inquiry-form" method="post" onsubmit="return handleInquirySubmit(event)">
-          
+        <form
+          class="space-y-6 bg-[#0c1017]/90 p-8 sm:p-10 rounded-3xl border border-cyan-500/25 backdrop-blur-md shadow-[0_0_40px_rgba(6,182,212,0.1)]"
+          id="inquiry-form" method="post" onsubmit="return handleInquirySubmit(event)">
+
           <div id="inq-status-message" class="hidden"></div>
-          <div id="inq-selected-badge" class="hidden mb-4 p-3 rounded-xl bg-cyan-500/10 border border-cyan-400/40 text-xs font-heading font-bold text-cyan-300 text-center"></div>
+          <div id="inq-selected-badge"
+            class="hidden mb-4 p-3 rounded-xl bg-cyan-500/10 border border-cyan-400/40 text-xs font-heading font-bold text-cyan-300 text-center">
+          </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="space-y-1.5">
-              <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300" for="inq-name">Full Name</label>
-              <input class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-all" id="inq-name" name="name" placeholder="Your name" required type="text" />
+              <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300"
+                for="inq-name">Full Name</label>
+              <input
+                class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-all"
+                id="inq-name" name="name" placeholder="Your name" required type="text" />
             </div>
             <div class="space-y-1.5">
-              <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300" for="inq-email">Email</label>
-              <input class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-all" id="inq-email" name="email" placeholder="you@company.com" required type="email" />
+              <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300"
+                for="inq-email">Email</label>
+              <input
+                class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-all"
+                id="inq-email" name="email" placeholder="you@company.com" required type="email" />
             </div>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="space-y-1.5">
-              <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300" for="inq-company">Company</label>
-              <input class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-all" id="inq-company" name="company" placeholder="Company (optional)" type="text" />
+              <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300"
+                for="inq-company">Company</label>
+              <input
+                class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-all"
+                id="inq-company" name="company" placeholder="Company (optional)" type="text" />
             </div>
             <div class="space-y-1.5">
-              <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300" for="inq-phone">Phone / WhatsApp</label>
-              <input class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-all" id="inq-phone" name="phone" placeholder="+91 98765 00000" type="tel" />
+              <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300"
+                for="inq-phone">Phone / WhatsApp</label>
+              <input
+                class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-all"
+                id="inq-phone" name="phone" placeholder="+91 98765 00000" type="tel" />
             </div>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <!-- Project Type -->
             <div class="space-y-1.5">
-              <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300" for="inq-type">Project Type</label>
-              <select class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-all" id="inq-type" name="projectType">
+              <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300"
+                for="inq-type">Project Type</label>
+              <select
+                class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-all"
+                id="inq-type" name="projectType">
                 <option>Custom Web App</option>
                 <option>ERP / Business System</option>
                 <option>POS / Retail</option>
@@ -668,8 +964,11 @@
             </div>
             <!-- Selected Plan (Populated automatically on Plan Selection) -->
             <div class="space-y-1.5">
-              <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300" for="inq-plan">Selected Plan</label>
-              <select class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-all" id="inq-plan" name="selectedPlan">
+              <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300"
+                for="inq-plan">Selected Plan</label>
+              <select
+                class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-all"
+                id="inq-plan" name="selectedPlan">
                 <option value="Starter">Starter</option>
                 <option value="Grow">Grow</option>
                 <option value="Scale">Scale</option>
@@ -678,8 +977,11 @@
             </div>
             <!-- Budget (Populated automatically on Plan Selection) -->
             <div class="space-y-1.5">
-              <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300" for="inq-budget">Budget</label>
-              <select class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-all" id="inq-budget" name="budget">
+              <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300"
+                for="inq-budget">Budget</label>
+              <select
+                class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-all"
+                id="inq-budget" name="budget">
                 <option value="₹15K – ₹35K">₹15K – ₹35K</option>
                 <option value="₹45K – ₹75K">₹45K – ₹75K</option>
                 <option value="₹80K – ₹1.10L">₹80K – ₹1.10L</option>
@@ -689,13 +991,20 @@
           </div>
 
           <div class="space-y-1.5">
-            <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300" for="inq-desc">Project Description</label>
-            <textarea class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl p-4 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-all" id="inq-desc" name="description" placeholder="Tell us about the problem and what you want to achieve." required rows="4"></textarea>
+            <label class="block text-xs font-heading font-bold uppercase tracking-widest text-cyan-300"
+              for="inq-desc">Project Description</label>
+            <textarea
+              class="w-full bg-[#101722] border border-cyan-500/25 rounded-xl p-4 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-all"
+              id="inq-desc" name="description" placeholder="Tell us about the problem and what you want to achieve."
+              required rows="4"></textarea>
           </div>
 
           <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <button class="hover-accent-cobalt bg-white text-black font-heading font-bold text-sm tracking-wider uppercase px-8 py-3.5 rounded-full inline-flex items-center gap-3 hover:bg-cyan-300 transition-all shadow-[0_0_25px_rgba(6,182,212,0.4)] group" id="inq-submit-btn" type="submit">
-              <span class="btn-arrow w-5 h-5 rounded-full bg-black text-white flex items-center justify-center text-xs transition-transform group-hover:translate-x-0.5">→</span>
+            <button
+              class="hover-accent-cobalt bg-white text-black font-heading font-bold text-sm tracking-wider uppercase px-8 py-3.5 rounded-full inline-flex items-center gap-3 hover:bg-cyan-300 transition-all shadow-[0_0_25px_rgba(6,182,212,0.4)] group"
+              id="inq-submit-btn" type="submit">
+              <span
+                class="btn-arrow w-5 h-5 rounded-full bg-black text-white flex items-center justify-center text-xs transition-transform group-hover:translate-x-0.5">→</span>
               <span class="btn-text">SEND INQUIRY</span>
             </button>
             <span class="text-xs text-slate-500">We reply within 24 hours.</span>
@@ -718,26 +1027,35 @@
         <a class="hover:text-cyan-300 transition-colors" href="#faq">FAQ</a>
         <a class="hover:text-cyan-300 transition-colors btn-magnetic" href="#contact">Contact</a>
       </div>
-      <h2 class="font-heading font-black text-3xl sm:text-5xl md:text-6xl text-white uppercase tracking-tight max-w-4xl mx-auto leading-tight mb-6">
-        LET'S BUILD THE FUTURE OF DIGITAL SYSTEMS TOGETHER.
+      <h2
+        class="font-heading font-black text-3xl sm:text-5xl md:text-6xl text-white uppercase tracking-tight max-w-4xl mx-auto leading-tight mb-6">
+        READY TO BUILD CUSTOM SOFTWARE THAT DRIVES GROWTH?
       </h2>
-      <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto mb-10">Ready to launch? From start to scale, we turn your product vision into reality.</p>
+      <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto mb-10">From initial MVP architecture to enterprise
+        system scaling, ForWyn Enterprises delivers robust software engineering solutions.</p>
 
       <div class="mb-16">
-        <a class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-black font-heading font-bold text-xs sm:text-sm uppercase tracking-wider hover:bg-cyan-300 transition-all shadow-[0_0_35px_rgba(6,182,212,0.45)] hover:scale-105 btn-magnetic" href="#contact">
+        <a class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-black font-heading font-bold text-xs sm:text-sm uppercase tracking-wider hover:bg-cyan-300 transition-all shadow-[0_0_35px_rgba(6,182,212,0.45)] hover:scale-105 btn-magnetic"
+          href="#contact">
           <span class="w-2 h-2 rounded-full bg-cyan-500 shadow-[0_0_6px_#06b6d4]"></span>
-          <span>BUILD YOUR WIN →</span>
+          <span>START YOUR BUILD →</span>
         </a>
       </div>
 
-      <div class="relative w-full max-w-6xl mx-auto select-none pointer-events-none py-8 px-4 flex items-center justify-center" style="overflow: visible;">
-        <span class="wordmark-full block font-heading font-black tracking-normal text-transparent uppercase text-center w-full whitespace-nowrap footer-shimmer-text" style="font-size: clamp(2rem, 5.2vw, 5.8rem); line-height: 1.1; -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.85); text-shadow: rgba(255, 255, 255, 0.2) 0px 0px 25px;">
+      <div
+        class="relative w-full max-w-6xl mx-auto select-none pointer-events-none py-8 px-4 flex items-center justify-center"
+        style="overflow: visible;">
+        <span
+          class="wordmark-full block font-heading font-black tracking-normal text-transparent uppercase text-center w-full whitespace-nowrap footer-shimmer-text"
+          style="font-size: clamp(2rem, 5.2vw, 5.8rem); line-height: 1.1; -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.85); text-shadow: rgba(255, 255, 255, 0.2) 0px 0px 25px;">
           FORWYN ENTERPRISES
         </span>
       </div>
 
-      <div class="pt-12 border-t border-cyan-500/15 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-        <div id="footer-copy">© 2026 <span class="text-white font-medium">FORWYN ENTERPRISES</span>. All Rights Reserved.</div>
+      <div
+        class="pt-12 border-t border-cyan-500/15 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <div id="footer-copy">© 2026 <span class="text-white font-medium">FORWYN ENTERPRISES</span>. All Rights
+          Reserved.</div>
         <div class="flex items-center gap-6">
           <a class="hover:text-cyan-300 transition-colors" href="javascript:void(0)">Privacy Policy</a>
           <a class="hover:text-cyan-300 transition-colors" href="javascript:void(0)">Terms of Service</a>

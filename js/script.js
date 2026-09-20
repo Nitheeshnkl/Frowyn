@@ -17,18 +17,18 @@
   const siteConfig = {
     companyName: 'FORWYN ENTERPRISES',
     shortName: 'ForWyn',
-    tagline: 'Build What Moves You Forward.',
-    description: 'Custom Java Full Stack software engineering: web applications, ERP and business systems, AI integrations, and high-performance digital products built around real business problems.',
-    email: 'HELLO@FORWYN.COM',
-    phone: '+919876543210',
-    phoneHref: 'tel:+919876543210',
-    whatsappNumber: '919876543210',
+    tagline: 'Custom Software Engineering For Scalable Growth.',
+    description: 'Custom software development studio specializing in custom web applications, custom ERP software, retail POS systems, Java Spring Boot engineering, and AI business automation.',
+    email: 'forwynenterprises@gmail.com',
+    phone: '+91 95009 11807',
+    phoneHref: 'tel:+919500911807',
+    whatsappNumber: '919500911807',
     whatsappMessage: 'Hi ForWyn, I\'d like to discuss a software project.',
-    instagram: '',
-    linkedin: '',
+    instagram: 'https://www.instagram.com/forwynenterprises',
+    linkedin: 'https://www.linkedin.com/in/nitheesh-vellaiyan-996159256',
     youtube: '',
-    ctaPrimary: 'Build Your Win',
-    ctaSecondary: 'See Our Work',
+    ctaPrimary: 'Start Custom Build',
+    ctaSecondary: 'Explore Projects',
     bookCallLabel: 'Book A Call',
     bookingUrl: '',
     copyrightYear: '2026',
@@ -40,15 +40,15 @@
     mailtoHref: 'mailto:' + siteConfig.email,
   };
 
-  // --- Partner / Client Ticker Data ---
-  const tickerRow1Companies = ['VERTEX', 'ARC', 'NOVA', 'ORBIT', 'LUMEN', 'NORTHSTAR', 'VANTA', 'NEXA'];
-  const tickerRow2Companies = ['NORTHSTAR', 'VANTA', 'NEXA', 'VERTEX', 'ARC', 'NOVA', 'LUMEN', 'ORBIT'];
+  // --- Core Capabilities Ticker Data ---
+  const tickerRow1Companies = ['CUSTOM ERP', 'RETAIL POS', 'WEB APPLICATIONS', 'WORKFLOW AUTOMATION', 'REST APIS', 'SPRING BOOT', 'REACT & TS', 'INTERNAL TOOLS'];
+  const tickerRow2Companies = ['SYSTEM ARCHITECTURE', 'DATABASE DESIGN', 'CLOUD DEPLOYMENT', 'CLIENT PORTALS', 'ROLE-BASED ACCESS', 'PAYOUT PIPELINES', 'INVENTORY BILLING', 'SECURE AUTH'];
 
   // --- Metrics Data Model ---
   const metrics = {
     projects: {
       index: '01',
-      value: '100+',
+      value: '50+',
       title: 'PROJECTS',
       description: 'Mission-critical architectures engineered for enterprise scale.',
       footerLabel: 'Execution Integrity',
@@ -78,40 +78,40 @@
     {
       id: 'digital-products',
       index: '01',
-      title: 'DIGITAL PRODUCTS',
-      description: 'End-to-end web & mobile applications designed with razor-sharp UX. Built on resilient microservices, responsive design standards, and battle-tested TypeScript engines.',
-      tags: ['WEB APPLICATIONS', 'CONSUMER PLATFORMS', 'DAPPS'],
-      pillTag: 'Web Applications',
+      title: 'CUSTOM WEB APPLICATIONS',
+      description: 'Custom web applications built around your business workflows — from e-commerce platforms, customer portals, and member management systems to SaaS-style dashboards, admin tools, and API-driven applications. Full-stack development using React, TypeScript, and Java Spring Boot.',
+      tags: ['CUSTOM WEB APPS', 'E-COMMERCE & PORTALS', 'FULL-STACK DEVELOPMENT'],
+      pillTag: 'Custom Web Apps',
       visualType: 'browser-terminal',
       accent: 'cyan',
     },
     {
       id: 'business-systems',
       index: '02',
-      title: 'BUSINESS SYSTEMS',
-      description: 'Replace bloated spreadsheet piles with tailored internal software: operational command dashboards, point-of-sale platforms, and synchronized database backbones.',
-      tags: ['CUSTOM ERP', 'POS BACKENDS', 'INVENTORY ENGINES'],
-      pillTag: 'Digital Infrastructure',
+      title: 'BUSINESS SYSTEMS & ERP SOFTWARE',
+      description: 'Software your team uses internally to run the business — custom ERP systems, retail POS software, inventory and billing platforms, employee and admin tools, and role-based operational dashboards. Built specifically for your workflows, not adapted from a generic template.',
+      tags: ['CUSTOM ERP SOFTWARE', 'RETAIL POS SYSTEMS', 'INTERNAL BUSINESS TOOLS'],
+      pillTag: 'Business Software',
       visualType: 'radar-orbit',
       accent: 'blue',
     },
     {
       id: 'ai-automation',
       index: '03',
-      title: 'AI & AUTOMATION',
-      description: 'Pragmatic machine intelligence tailored for operational efficiency. Autonomous document processing, semantic search, generative assistants, and smart scheduled pipelines.',
-      tags: ['NEURAL ASSISTANTS', 'PROCESS AUTOMATION', 'DATA INGESTION'],
-      pillTag: 'AI Systems',
+      title: 'AI & WORKFLOW AUTOMATION',
+      description: 'Practical automation that removes repetitive manual work from business operations. We integrate AI assistants, build scheduled data pipelines, automate document processing, and connect systems via APIs — applied where automation genuinely improves efficiency.',
+      tags: ['WORKFLOW AUTOMATION', 'API INTEGRATIONS', 'BUSINESS PROCESS AUTOMATION'],
+      pillTag: 'AI Automation',
       visualType: 'ai-sphere',
       accent: 'cyan',
     },
     {
       id: 'digital-experiences',
       index: '04',
-      title: 'DIGITAL EXPERIENCES',
-      description: 'Elevated digital flagships built to anchor your brand authority. Fast load speeds, fluid micro-interactions, responsive geometry, and undeniable aesthetic sophistication.',
-      tags: ['EDITORIAL PORTALS', '3D INTERACTIVE', 'WEB3 TOUCHPOINTS'],
-      pillTag: 'Hardware Acceleration',
+      title: 'HIGH-PERFORMANCE WEBSITES',
+      description: 'Business websites, company websites, landing pages, and portfolio websites engineered for fast load times and a strong digital presence. Responsive, conversion-focused interfaces designed to build credibility and generate enquiries.',
+      tags: ['BUSINESS WEBSITES', 'LANDING PAGES', 'RESPONSIVE INTERFACES'],
+      pillTag: 'Web Experiences',
       visualType: 'gpu-aperture',
       accent: 'cyan',
     },
@@ -120,56 +120,88 @@
   // --- Projects Data Model ---
   const projects = [
     {
-      id: 'lumina-pos',
+      id: 'charity-golf-club',
       indexBadge: 'WORK 01',
-      category: 'Business Systems',
-      eyebrow: 'Work 01 • Business Systems',
-      title: 'LUMINA RETAIL POS',
-      statement: 'Custom web-based cashier application with automated ledger reconciliations for a multi-outlet retail group.',
-      image: 'https://lh3.googleusercontent.com/aida/AEtjO1XOhOXVJgSn-nVMiHxOWmP1kqeh5woQ1HmxYt9GyyWXRFfbdIb7LoC45veuujlEprWwD-Dri0fbFghfID0hsXFBF93Pf71vHyGLe8C2PMnHdEBg7kTCOEJVlj1k_cvoj7vl0ZtQZU8dzQ6lNU5k2rbpyYzo8Ej-Q9PNpENhHyupwOTO7HBStLWUh0eTUfDL1MuNGgExqViDb2xXnmKQKycZkrBUlnIW2V7Xyba9aRt6',
-      overview: 'Lumina Retail POS replaced disconnected cashier terminals with a synchronized cloud-backed register architecture.',
-      challenge: 'Multi-store inventory sync bottlenecks led to pricing discrepancies during peak operational hours.',
-      approach: 'Engineered an offline-first transactional engine powered by Spring Boot microservices and local DB persistence.',
-      solution: 'Sub-second checkout transactions, automated ledger sync, and unified multi-location analytics.',
-      techStack: ['Java', 'Spring Boot', 'Spring Data JPA', 'Spring Security', 'PostgreSQL', 'React', 'TypeScript', 'Docker'],
-      outcomes: 'Zero transaction loss during network outages and a 40% reduction in end-of-day reconciliation time.',
+      statusBadge: 'ACTIVE BUILD // IN PRODUCTION',
+      clientRegion: 'UK / Global Client',
+      budgetQuotation: '₹2,00,000',
+      category: 'Custom Web Application & Membership Platform',
+      eyebrow: 'Work 01 • Custom Web Application & Member Portal',
+      title: 'CHARITY GOLF CLUB',
+      liveUrl: 'https://golfcharitysubscriptionplatform.vercel.app/', // Live external URL
+      statement: 'A custom web application and member portal engineered for a UK client, combining recurring subscription billing, verified score submission workflows, automated charity splits, and prize pool distribution.',
+      image: './assets/images/gcp.png',
+      overview: 'Developed for an overseas sports entertainment client, Charity Golf Club is a custom web platform and member portal connecting amateur golfers with certified non-profit charities. Members subscribe through recurring billing tiers, submit verified scorecards through their private user dashboard, and participate in automated prize draws supported by custom calculation models.',
+      challenge: 'The client required a fraud-resistant, responsive web application capable of managing multi-tier member subscriptions, user scorecard verification, automated fund allocation between charitable causes and prize reserves, and smooth administrative oversight.',
+      approach: 'We engineered a responsive full-stack web application featuring recurring payment pipelines, member dashboard workflows, structured score verification rules, and automated prize calculations designed to operate cleanly without manual intervention.',
+      solution: 'A custom digital platform built with dynamic jackpot tracking, automated multi-charity revenue splits, real-time score verification queues, role-based administrative dashboards, and structured member management tools.',
+      keyFeatures: [
+        'Member Subscription Management (Monthly & Annual Plans)',
+        'User Account & Member Dashboard',
+        'Verified Scorecard Submission Workflow',
+        'Dynamic Prize Pool & Draw Tracking',
+        'Automated Multi-Charity Revenue Split & Allocation',
+        'Tiered Cash Prize Calculation & Rules Engine',
+        'Charity Partner Directory & Impact Showcase',
+        'Administrative Verification & Audit Portal'
+      ],
+      outcomes: 'Core membership platform, subscription billing workflows, user portal, and automated allocation logic successfully deployed to staging for active milestone delivery.',
       featured: true,
       published: true,
     },
+
     {
       id: 'nexa-ops',
       indexBadge: 'WORK 02',
-      category: 'Core Architecture',
-      eyebrow: 'Work 02 • Core Architecture',
-      title: 'NEXA OPERATIONS OS',
-      statement: 'Centralized ERP unification engine connecting supply chain dispatch, engineer assignments, and internal compliance validation into a single command center.',
-      image: 'https://lh3.googleusercontent.com/aida/AEtjO1Xf8flAAWjayD5VRjifaUzXA8sN-89MY3pDsIaoVSxlNt9wTPQg8HevHSV1PQ8wTqomlS7ic3gVTF-zRhBOAhf2m8_NDTsbn-u2miTYpWACrO7VAK4JemCkBUflGkp-q51j7JcOlow8OqjXUiIcopaGxjnOUEVuehiQIftJIoJzVm7dmyii6a7sxJr6btu6TI23KGVRZyaZnaYWKYtj2IXUIUDqh5VQ39NctzCTGpRIGA',
-      overview: 'Operational control plane built for high-throughput logistics teams.',
-      challenge: 'Fragmented internal dispatch software caused severe communication delays between warehouse leads and field agents.',
-      approach: 'Built a real-time reactive event stream connecting dispatch schedules with mobile field tools.',
-      solution: 'Integrated command center offering live map tracking, automated roster assignment, and real-time inventory updates.',
-      techStack: ['Java', 'Spring Boot', 'Spring Security', 'PostgreSQL', 'React', 'TypeScript', 'Docker'],
-      outcomes: 'Reduced dispatch cycle times by 35% across 12 regional distribution hubs.',
+      category: 'Custom ERP Software & Business Operations',
+      eyebrow: 'Work 02 • Custom ERP Software & Operations',
+      title: 'NOVA FINANCIAL ERP',
+      statement: 'A custom ERP system and financial operations platform engineered for corporate ledger management, automated payroll processing, and multi-tier approval workflows.',
+      image: './assets/images/PROJECT_2.png',
+      overview: 'Nova Financial ERP is a centralized business management platform engineered to connect internal company workflows with banking and payout rails. The system provides finance and executive teams with real-time cash flow visibility, corporate account management, automated disbursement queues, and role-based permissions for treasury officers, accounting managers, and compliance auditors.',
+      challenge: 'Growing businesses frequently manage supplier disbursements, vendor payouts, and employee payroll across fragmented banking interfaces and isolated spreadsheets. This causes reconciliation delays, audit discrepancies, and high exposure to manual entry errors.',
+      approach: 'We developed a unified internal business software platform centered on strict role-based access control, structured ledger tracking, and automated payout workflows. By replacing manual spreadsheets with synchronized balance dashboards, the organization gained centralized control over operational fund flows.',
+      solution: 'A centralized corporate ERP platform featuring secure authentication, dedicated entity wallets, automated payout queues, maker-checker approval chains, and immutable activity logs. Finance teams can execute bulk disbursements, track account balances, reconcile invoices, and maintain an audit-ready financial trail.',
+      keyFeatures: [
+        'Role-Based Access Control (Admins, Accountants, Auditors)',
+        'Centralized Multi-Account Ledger & Balance Tracking',
+        'Automated Bulk Payroll & Vendor Disbursement Queues',
+        'Real-Time Cash Flow Dashboard & Financial Reporting',
+        'Invoice Reconciliation & Payment Verification',
+        'Maker-Checker Transaction Approval Workflows',
+        'Audit-Ready Activity Logging & Compliance Trails',
+        'Multi-Currency Settlement & Bank Transfer Integration'
+      ],
+      outcomes: 'Replaced manual spreadsheet reconciliation with centralized automated ledger sync, standardized maker-checker approval workflows, and established an audit-ready record for corporate disbursements.',
       featured: true,
       published: true,
-    },
-    {
-      id: 'aura-assistant',
+    }, {
+      id: 'lumina-pos',
       indexBadge: 'WORK 03',
-      category: 'AI Integration',
-      eyebrow: 'Work 03 • AI Integration',
-      title: 'AURA NEURAL ASSISTANT',
-      statement: 'Enterprise retrieval-augmented assistant that digests proprietary internal documentation for fast technical cross-referencing.',
-      image: 'https://lh3.googleusercontent.com/aida/AEtjO1W8dGCkLOPhwBsiiPK7DtaIp0JeBRA_-qqnkAUpUDM4kkdXDWQaDq0cfr9s-6TJ6ziZv0ryjECHUBxofMv5CUUOWeKnTavOYg9ajPrxf-SawDfvXuF_ZroZOc9ljcO9gikqJTrtR2FTiUFrtwV02dAJx9WZmrArtndW-TfQXY306qN-ZSCrRI5IaUiNseb2aG_oN5fhotme4UJo2iyVbSZNKa0I4HD7aBztvgpmn9QC',
-      overview: 'Bespoke AI knowledge synthesis layer for engineering and compliance operations.',
-      challenge: 'Engineers spent over 8 hours per week searching through 5,000+ internal PDF specifications and legacy manuals.',
-      approach: 'Implemented a secure RAG vector pipeline using semantic embeddings and strict role-based access controls.',
-      solution: 'Instant natural-language queries delivering exact cited specification clauses in under 1.2 seconds.',
-      techStack: ['Java', 'Spring Boot', 'Python', 'Vector DB', 'React', 'TypeScript', 'Docker'],
-      outcomes: 'Saved an estimated 6.5 engineering hours per user per week across the engineering department.',
+      category: 'Retail POS & Store Management',
+      eyebrow: 'Work 03 • Retail POS & Store Management',
+      title: 'LUMINA RETAIL POS',
+      statement: 'A production-ready retail POS and store management system built for a departmental store to streamline barcode billing, real-time inventory, supplier purchases, and bilingual daily operations.',
+      image: './assets/images/Retail_pos.png',
+      overview: 'Lumina Retail POS is a custom retail management and billing platform built and deployed for an active departmental store (Sri Murugan Store). The system unifies counter billing, barcode scanning, live stock management, supplier purchases, customer records, and thermal receipt printing into a practical workflow designed specifically for fast-paced store staff in both Tamil and English.',
+      challenge: 'The store managed hundreds of fast-moving grocery and retail products using disconnected manual notebooks and basic calculators. Daily sales, inventory counts, stock replenishment, and customer credit tracking lacked a single source of truth, slowing counter checkout and leading to unrecorded stock discrepancies.',
+      approach: 'We designed a focused desktop-friendly POS application mapped to counter checkout speeds, ensuring fast product lookup, barcode scanner compatibility, and instant payment recording (Cash and UPI). We eliminated unnecessary generic e-commerce bloat to keep the software responsive, straightforward for non-technical retail staff, and reliable under continuous store hours.',
+      solution: 'A full-featured retail software suite integrating high-speed counter checkout, live inventory deduction, purchase order entry, supplier management, bilingual Tamil/English navigation, and role-separated access for store cashiers and the business owner.',
+      // Renamed from techStack to keyFeatures:
+      keyFeatures: [
+        'High-Speed Barcode Scanning & Counter Billing',
+        'Real-Time Inventory Tracking & Low-Stock Alerts',
+        'Bilingual Interface (Tamil & English) for Store Staff',
+        'Instant UPI QR & Cash Payment Reconciliation',
+        'Supplier Purchase Orders & Goods Receipt Entry',
+        'Thermal Receipt Generation & Local Printing',
+        'Owner vs. Cashier Role-Based Access Control',
+        'Manual Billing & Custom SKU Entry for Unlisted Goods'
+      ],
+      outcomes: 'Successfully deployed and operating in daily production at Sri Murugan Store, managing regular customer transactions, barcode billing, and storewide stock tracking without external software dependencies.',
       featured: true,
       published: true,
-    },
+    }
   ];
 
   // --- Plans Data Model (Centralized Plan -> Budget Mapping) ---
@@ -178,53 +210,53 @@
       id: 'starter',
       name: 'Starter',
       budget: '₹15K – ₹35K',
-      description: 'Ideal for fast MVP launches, interactive landing flagships, and focused single-purpose tools.',
+      description: 'For businesses that need a professional online presence — business websites, company websites, landing pages, and portfolio websites. Includes responsive design, clean frontend build, and basic CMS or form integrations.',
     },
     grow: {
       id: 'grow',
       name: 'Grow',
       budget: '₹45K – ₹75K',
-      description: 'Full-featured custom web applications, SaaS dashboards, and automated client portals.',
+      description: 'For growing businesses that need more than a website — custom web applications, e-commerce stores, customer or member portals, user authentication, databases, admin dashboards, and business workflows.',
     },
     scale: {
       id: 'scale',
       name: 'Scale',
       budget: '₹80K – ₹1.10L',
-      description: 'High-throughput operational business operating systems, ERP replacements, and Web3 integrations.',
+      description: 'For complex business applications — custom ERP systems, retail POS software, internal operational tools, multi-role access systems, third-party integrations, and advanced backend architecture.',
     },
     custom: {
       id: 'custom',
       name: 'Custom',
       budget: 'Custom',
-      description: 'Dedicated engineering cell for specialized venture incubations and ongoing product evolution.',
+      description: 'For projects with complex or unusual requirements. We run a discovery and scoping process, define the system architecture, plan phased delivery, and provide a detailed technical proposal and cost estimate.',
     }
   };
 
-  // --- Reviews Data Model ---
+  // --- Reviews / Project Delivery Feedback Data Model ---
   const reviews = [
     {
-      id: 'demo-arun',
-      name: 'Arun',
-      role: 'Business Owner',
-      company: 'Retail Group',
+      id: 'lumina-retail',
+      name: 'Retail Store Operations',
+      role: 'Store Operations',
+      company: 'Sri Murugan Store POS',
       rating: 5,
-      text: 'ForWyn rebuilt our retail backend and the difference was immediate. The POS and ledger flow is fast, reliable, and our team actually enjoys using it. Genuinely serious engineering work.',
+      text: 'The in-store POS system brought barcode billing, daily inventory, and supplier purchasing into a unified bilingual workflow. Daily billing is fast and store staff operate it reliably.',
     },
     {
-      id: 'demo-priya',
-      name: 'Priya',
-      role: 'Startup Founder',
-      company: 'SaaS Venture',
+      id: 'golf-club-platform',
+      name: 'Platform Product Lead',
+      role: 'Web Platform Delivery',
+      company: 'Charity Golf Club UK',
       rating: 5,
-      text: 'They took our rough MVP idea and shipped a clean, production-ready application. Clear communication and a real engineering mindset from day one.',
+      text: 'Engineered a full-stack membership subscription platform with automated donation splits, scorecard submission workflows, and dynamic jackpot countdowns deployed to staging.',
     },
     {
-      id: 'demo-karthik',
-      name: 'Karthik',
-      role: 'Operations Manager',
-      company: 'Supply Chain Ops',
-      rating: 4,
-      text: 'Our dispatch and inventory workflows were a mess. ForWyn consolidated everything into one system and gave us a dashboard we actually trust every morning.',
+      id: 'nova-erp-system',
+      name: 'Corporate Systems Build',
+      role: 'Operations & Treasury',
+      company: 'Nova Financial ERP',
+      rating: 5,
+      text: 'Replaced manual spreadsheet reconciliation with centralized automated ledger sync and maker-checker authorization workflows for corporate disbursements and auditing.',
     },
   ];
 
@@ -232,9 +264,58 @@
     {
       name: 'Nitheesh V',
       role: 'Founder & System Architecture',
-      bio: 'Directs core systems logic and high-concurrency client architectures.',
+      bio: 'Specializes in custom software development, Java Spring Boot engineering, React TypeScript applications, and enterprise ERP architectures.',
       accent: 'cyan',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDQyZc7KYdwDUla-bs2DNRexrfl04kIJG9un1fRsP8upJoapEb8VkyQpMxw1_DKyY_5c2iDpLRkvmvhl4ObLKDDydeDDtrYE_NZ4x8WXVsQXmS8yaSYBGUnuf3l5VJo54EjFGkHm_ZAsS68zFfhhDF5kZJx4S4G6kfownYRvRnCfe17sSW_F4A-BlGOU2UZAyWN4E4d861_1QieOdo4-TyjYd_CmQQxK3vVQKSD_Q8Do2RFuXGGMTOK6Q',
+      image: './assets/images/team/Nitheesh.jpeg',
+    },
+    {
+      name: 'Sakthi',
+      role: 'Business Development Head',
+      bio: 'Leads strategic partnerships, client acquisitions, and contract scoping across domestic and international accounts.',
+      accent: 'cyan',
+      image: './assets/images/team/Sakthi.jpeg',
+    },
+    {
+      name: 'Mohan',
+      role: 'Core Engineering & Development Head',
+      bio: 'Directs full-stack implementation, Java Spring Boot backends, React TypeScript platforms, and enterprise ERP architectures.',
+      accent: 'cyan',
+      image: './assets/images/team/mohan.jpeg',
+    },
+    {
+      name: 'Divya',
+      role: 'Quality Assurance & Testing Head',
+      bio: 'Oversees end-to-end test automation, API validation, regression testing, and production compliance standards.',
+      accent: 'cyan',
+      image: './assets/images/team/divya.jpeg',
+    },
+    {
+      name: 'Dharanesh',
+      role: 'DevOps & Cloud Infrastructure Head',
+      bio: 'Manages CI/CD deployment pipelines, container orchestration, cloud security, and high-availability server infrastructure.',
+      accent: 'cyan',
+      image: './assets/images/team/dharanesh.jpeg',
+    },
+    {
+      name: 'Lithan',
+      role: 'UI/UX & Product Design Lead',
+      bio: 'Crafts design systems, interactive prototypes, user journey mapping, and ergonomic product workflows across web and mobile platforms.',
+      accent: 'cyan',
+      image: './assets/images/team/lithen.jpeg',
+    },
+    {
+      name: 'Gokul',
+      role: 'Frontend & Web Applications Engineer',
+      bio: 'Specializes in responsive frontend architecture, interactive state management, performance optimization, and modern JavaScript engines.',
+      accent: 'cyan',
+      image: './assets/images/team/gokul.jpeg',
+    },
+    {
+      name: 'Raja',
+      role: 'Backend & Database Systems Engineer',
+      bio: 'Focuses on relational database modeling, secure API integrations, query optimization, and resilient transactional pipelines.',
+      accent: 'cyan',
+      image: './assets/images/team/raja.jpeg',
     },
   ];
 
@@ -744,34 +825,118 @@
 
     container.innerHTML = '';
     const featured = projects.filter(p => p.featured).slice(0, 3);
+
     featured.forEach((project, idx) => {
       const card = document.createElement('article');
-      card.className = 'group cursor-pointer';
-      card.onclick = () => navigateToProject(project.id);
+      card.className = 'group';
+
+      const hasLiveUrl = Boolean(project.liveUrl);
+
       card.innerHTML = `
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          
+          <!-- LEFT / TEXT COLUMN: Always opens internal detailed case study -->
           <div class="lg:col-span-5 order-2 lg:order-${idx % 2 === 0 ? '1' : '2'}">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-[#0c1017]/90 text-[10px] tracking-wider uppercase text-cyan-300 mb-4">
-              <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>${project.category}
+            
+            <!-- Badges -->
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-[#0c1017]/90 text-[10px] tracking-wider uppercase text-cyan-300">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>${project.category}
+              </div>
+              ${project.statusBadge ? `
+                <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-emerald-500/40 bg-emerald-500/10 text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-widest">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  ${project.statusBadge}
+                </div>
+              ` : ''}
             </div>
-            <h3 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-white uppercase tracking-tight mb-4 group-hover:text-cyan-300 transition-colors">${project.title}</h3>
+
+            <!-- Title: Clickable to detailed case study -->
+            <h3 
+              onclick="window.navigateToProject('${project.id}')" 
+              class="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-white uppercase tracking-tight mb-4 group-hover:text-cyan-300 transition-colors cursor-pointer"
+            >
+              ${project.title}
+            </h3>
+
+            ${project.budgetQuotation ? `
+              <div class="inline-flex items-center gap-3 px-3.5 py-1.5 rounded-xl bg-[#101722] border border-cyan-500/25 mb-4">
+                <span class="text-[10px] font-mono tracking-widest text-slate-400 uppercase">Contract Scope:</span>
+                <span class="text-xs font-heading font-black text-white">${project.budgetQuotation}</span>
+                <span class="text-[10px] font-mono text-cyan-400 uppercase">• ${project.clientRegion || 'Foreign Client'}</span>
+              </div>
+            ` : ''}
+
             <p class="text-slate-300 text-base leading-relaxed mb-6">${project.statement}</p>
-            <div class="inline-flex items-center gap-2 text-sm font-heading font-bold uppercase tracking-wider text-cyan-400 group-hover:gap-4 transition-all">
-              <span>View Project Details</span>
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            <!-- Actions Bar -->
+            <div class="flex flex-wrap items-center gap-5">
+              <!-- Case Study Button: Opens Overview & Key Features -->
+              <button 
+                type="button" 
+                onclick="window.navigateToProject('${project.id}')" 
+                class="inline-flex items-center gap-2 text-sm font-heading font-bold uppercase tracking-wider text-cyan-400 hover:text-cyan-200 transition-colors group/btn"
+              >
+                <span>Explore Case Study</span>
+                <svg class="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+
+              <!-- If Live URL exists: Show direct launch pill -->
+              ${hasLiveUrl ? `
+                <a 
+                  href="${project.liveUrl}" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-emerald-500/40 bg-emerald-500/10 text-xs font-heading font-bold uppercase tracking-wider text-emerald-300 hover:bg-emerald-500/20 transition-all shadow-[0_0_15px_rgba(16,185,129,0.15)]"
+                >
+                  <span>Launch Live Platform</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              ` : ''}
             </div>
           </div>
+
+          <!-- RIGHT / IMAGE COLUMN: Directs to Vercel for Golf, or Case Study for Others -->
           <div class="lg:col-span-7 order-1 lg:order-${idx % 2 === 0 ? '2' : '1'}">
-            <div class="relative rounded-3xl overflow-hidden border border-cyan-500/20 group-hover:border-cyan-400/40 transition-all shadow-[0_0_40px_rgba(6,182,212,0.1)] group-hover:shadow-[0_0_60px_rgba(6,182,212,0.25)]">
-              <img src="${project.image}" alt="${project.title}" class="w-full h-[280px] sm:h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy"/>
+            <div 
+              class="relative rounded-3xl overflow-hidden border border-cyan-500/20 hover:border-cyan-400/50 transition-all shadow-[0_0_40px_rgba(6,182,212,0.1)] hover:shadow-[0_0_60px_rgba(6,182,212,0.25)] cursor-pointer"
+              onclick="${hasLiveUrl ? `window.open('${project.liveUrl}', '_blank', 'noopener,noreferrer')` : `window.navigateToProject('${project.id}')`}"
+            >
+              <img 
+                src="${project.image}" 
+                alt="${project.title} — ${project.category}" 
+                class="w-full h-[280px] sm:h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" 
+                loading="lazy"
+              />
+              
+              <!-- Badges Layered on Image -->
+              <div class="absolute top-4 right-4 flex items-center gap-2">
+                ${hasLiveUrl ? `
+                  <div class="backdrop-blur-md bg-emerald-950/80 border border-emerald-400/60 px-3 py-1.5 rounded-full text-[10px] font-mono font-bold text-emerald-300 tracking-wider flex items-center gap-1.5 shadow-lg">
+                    <span>LIVE DEMO</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                ` : ''}
+                ${project.statusBadge ? `
+                  <div class="backdrop-blur-md bg-black/80 border border-cyan-500/40 px-3 py-1.5 rounded-full text-[10px] font-mono font-bold text-cyan-300 tracking-wider hidden sm:block">
+                    LIVE CONTRACT // ${project.budgetQuotation}
+                  </div>
+                ` : ''}
+              </div>
             </div>
           </div>
+
         </div>
       `;
       container.appendChild(card);
     });
   }
-
   function renderWorkIndex() {
     const grid = document.getElementById('work-index-grid');
     if (!grid) return;
@@ -783,7 +948,7 @@
       card.onclick = () => navigateToProject(project.id);
       card.innerHTML = `
         <div class="relative overflow-hidden">
-          <img src="${project.image}" alt="${project.title}" class="w-full h-[240px] object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy"/>
+          <img src="${project.image}" alt="${project.title} — ${project.category}" class="w-full h-[240px] object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy"/>
           <div class="absolute top-4 left-4 px-3 py-1 rounded-full border border-cyan-500/40 bg-[#0c1017]/90 backdrop-blur text-[10px] tracking-wider uppercase text-cyan-300">${project.category}</div>
         </div>
         <div class="p-6">
@@ -809,50 +974,110 @@
     const body = document.getElementById('project-route-body');
     if (!body) return;
 
+    // Check for keyFeatures (falls back to techStack if any legacy items exist)
+    const featuresList = project.keyFeatures || project.techStack || [];
+
     body.innerHTML = `
-      <div class="container mx-auto px-6 py-12 max-w-5xl">
-        <button onclick="location.hash='#/work'" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-500/30 bg-[#0c1017] hover:bg-cyan-400/10 text-xs font-heading font-bold uppercase tracking-wider text-white mb-8 transition-all">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <span>Back to Works</span>
-        </button>
-        <div class="mb-8">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-[#0c1017]/90 text-[10px] tracking-wider uppercase text-cyan-300 mb-4">
+    <div class="container mx-auto px-6 py-12 max-w-5xl">
+      <button onclick="location.hash='#/work'" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-500/30 bg-[#0c1017] hover:bg-cyan-400/10 text-xs font-heading font-bold uppercase tracking-wider text-white mb-8 transition-all">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Back to Works</span>
+      </button>
+
+      <!-- Header & Badges -->
+      <div class="mb-8">
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-[#0c1017]/90 text-[10px] tracking-wider uppercase text-cyan-300">
             <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>${project.category}
           </div>
-          <h1 class="font-heading font-black text-4xl sm:text-5xl md:text-6xl text-white uppercase tracking-tight mb-4">${project.title}</h1>
-          <p class="text-slate-300 text-lg leading-relaxed max-w-3xl">${project.statement}</p>
-        </div>
-        <div class="relative rounded-3xl overflow-hidden border border-cyan-500/20 mb-12 shadow-[0_0_40px_rgba(6,182,212,0.15)]">
-          <img src="${project.image}" alt="${project.title}" class="w-full h-[320px] sm:h-[480px] object-cover" loading="lazy"/>
-        </div>
-        ${project.overview ? `
-          <div class="bg-[#0c1017]/80 border border-cyan-500/20 rounded-3xl p-6 sm:p-8 mb-8">
-            <div class="text-xs font-heading font-bold uppercase tracking-widest text-cyan-400 mb-3">01 // Overview & Challenge</div>
-            <p class="text-slate-300 text-sm leading-relaxed mb-4">${project.overview}</p>
-            <p class="text-slate-400 text-sm leading-relaxed">${project.challenge}</p>
-          </div>
-        ` : ''}
-        ${project.techStack && project.techStack.length > 0 ? `
-          <div class="bg-[#0c1017]/90 border border-cyan-500/30 rounded-3xl p-6 sm:p-8 mb-12">
-            <div class="text-xs font-heading font-bold uppercase tracking-widest text-cyan-300 mb-4">Enterprise Technology Stack</div>
-            <div class="flex flex-wrap gap-2">
-              ${project.techStack.map(tech => `<span class="px-3 py-1.5 bg-[#101722] rounded-lg border border-cyan-500/25 text-xs text-cyan-200">${tech}</span>`).join('')}
+
+          ${project.statusBadge ? `
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-emerald-500/40 bg-emerald-500/10 text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-widest shadow-[0_0_15px_rgba(16,185,129,0.15)]">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              ${project.statusBadge}
             </div>
-          </div>
-        ` : ''}
-        <div class="flex items-center justify-center pt-8">
-          <a href="#contact" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-black hover:bg-[#2B59FF] hover:text-white font-heading font-bold text-sm uppercase tracking-wider transition-all shadow-[0_0_30px_rgba(43,89,255,0.4)]">
-            <span>Request Similar Build</span>
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
+          ` : ''}
+
+          ${project.budgetQuotation ? `
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-400/30 bg-[#101722] text-[10px] font-mono font-bold text-cyan-300 uppercase tracking-wider">
+              <span class="text-slate-400">QUOTATION:</span> ${project.budgetQuotation}${project.clientRegion ? `<span class="text-cyan-500">• ${project.clientRegion}</span>` : ''}
+            </div>
+          ` : ''}
+        </div>
+
+        <h1 class="font-heading font-black text-4xl sm:text-5xl md:text-6xl text-white uppercase tracking-tight mb-4">${project.title}</h1>
+        <p class="text-slate-300 text-lg leading-relaxed max-w-3xl">${project.statement}</p>
+      </div>
+
+     <!-- Main Project Visual Banner -->
+      <div 
+        class="relative rounded-3xl overflow-hidden border border-cyan-500/20 mb-12 shadow-[0_0_40px_rgba(6,182,212,0.15)] ${project.liveUrl ? 'cursor-pointer group' : ''}"
+        ${project.liveUrl ? `onclick="window.open('${project.liveUrl}', '_blank', 'noopener,noreferrer')"` : ''}
+      >
+        <img src="${project.image}" alt="${project.title} — ${project.category}" class="w-full h-[320px] sm:h-[480px] object-cover ${project.liveUrl ? 'group-hover:scale-105 transition-transform duration-500' : ''}" loading="lazy"/>
+        
+        <div class="absolute top-4 right-4 flex items-center gap-2">
+          ${project.liveUrl ? `
+            <div class="backdrop-blur-md bg-emerald-950/80 border border-emerald-400/50 px-3.5 py-1.5 rounded-full text-[11px] font-mono font-bold text-emerald-300 tracking-wider flex items-center gap-1.5 shadow-lg">
+              <span>OPEN LIVE PLATFORM</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          ` : ''}
+          ${project.statusBadge ? `
+            <div class="backdrop-blur-md bg-black/75 border border-emerald-500/40 px-3.5 py-1.5 rounded-full text-[11px] font-mono font-bold text-emerald-300 tracking-wider shadow-lg hidden sm:block">
+              ONGOING // ${project.budgetQuotation || 'ACTIVE'}
+            </div>
+          ` : ''}
         </div>
       </div>
-    `;
+
+      <!-- Section 01: Overview & Challenge -->
+      ${project.overview ? `
+        <div class="bg-[#0c1017]/80 border border-cyan-500/20 rounded-3xl p-6 sm:p-8 mb-8">
+          <div class="text-xs font-heading font-bold uppercase tracking-widest text-cyan-400 mb-3">01 // Overview &amp; Challenge</div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">${project.overview}</p>
+          <p class="text-slate-400 text-sm leading-relaxed">${project.challenge}</p>
+        </div>
+      ` : ''}
+
+      <!-- Section 02: Key Features & Capabilities -->
+      ${featuresList.length > 0 ? `
+        <div class="bg-[#0c1017]/90 border border-cyan-500/30 rounded-3xl p-6 sm:p-8 mb-8">
+          <div class="text-xs font-heading font-bold uppercase tracking-widest text-cyan-300 mb-4">02 // Key Features &amp; Capabilities</div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            ${featuresList.map(feature => `
+              <div class="flex items-center gap-2.5 px-3.5 py-2.5 bg-[#101722] rounded-xl border border-cyan-500/20 text-xs sm:text-sm text-slate-200">
+                <span class="text-cyan-400 font-bold shrink-0">✓</span>
+                <span>${feature}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      ` : ''}
+
+      <!-- Section 03: Delivery Status / Outcomes -->
+      ${project.outcomes ? `
+        <div class="bg-[#0c1017]/80 border border-cyan-500/20 rounded-3xl p-6 sm:p-8 mb-12">
+          <div class="text-xs font-heading font-bold uppercase tracking-widest text-cyan-400 mb-3">03 // Delivery Status &amp; Impact</div>
+          <p class="text-slate-300 text-sm leading-relaxed">${project.outcomes}</p>
+        </div>
+      ` : ''}
+
+      <!-- CTA -->
+      <div class="flex items-center justify-center pt-6">
+        <a href="#contact" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-black hover:bg-[#2B59FF] hover:text-white font-heading font-bold text-sm uppercase tracking-wider transition-all shadow-[0_0_30px_rgba(43,89,255,0.4)]">
+          <span>Request Similar Build</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  `;
   }
 
-  function navigateToProject(slug) {
+  window.navigateToProject = function (slug) {
     location.hash = `#/work/${slug}`;
-  }
+  };
+
 
   function renderMetrics() {
     const section = document.getElementById('metrics-section');
@@ -877,15 +1102,20 @@
 
       card.className = `p-8 rounded-2xl bg-[#0c1017]/80 border border-cyan-500/20 backdrop-blur relative overflow-hidden group hover:${borderColor} hover:shadow-[0_0_30px_${shadowColor}] transition-all interactive-card reveal-element`;
 
+      // Extract raw target numbers and symbols (e.g. "100+", "15+", "5.0")
+      let targetNumber = parseFloat(m.value.replace(/[^0-9.]/g, '')) || 0;
+      let suffix = m.value.replace(/[0-9.]/g, '') || '';
+      let isDecimal = m.value.includes('.');
+
       let valueMarkup = key === 'rating' ? `
-        <span class="stat-counter text-4xl lg:text-5xl font-heading font-black text-white uppercase tracking-tight">${m.value}</span>
+        <span class="stat-counter text-4xl lg:text-5xl font-heading font-black text-white uppercase tracking-tight" data-target="${targetNumber}" data-suffix="${suffix}" data-decimal="${isDecimal}">0.0</span>
         <span class="text-cyan-400 text-sm tracking-widest ml-1">${'★'.repeat(m.stars)}</span>
       ` : `
-        <span class="stat-counter text-4xl lg:text-5xl font-heading font-black text-white uppercase tracking-tight">${m.value}</span>
+        <span class="stat-counter text-4xl lg:text-5xl font-heading font-black text-white uppercase tracking-tight" data-target="${targetNumber}" data-suffix="${suffix}" data-decimal="${isDecimal}">0</span>
       `;
 
       card.innerHTML = `
-        <div class="text-xs font-heading font-bold ${key === 'clients' ? 'text-blue-400' : 'text-cyan-400'} uppercase tracking-widest mb-3">Metrics // ${m.index}</div>
+        <div class="text-xs font-heading font-bold ${key === 'clients' ? 'text-blue-400' : 'text-cyan-400'} uppercase tracking-widest mb-3">METRICS // ${m.index}</div>
         <div class="flex items-baseline gap-2 mb-2">
           ${valueMarkup}
           <span class="text-xl font-heading font-bold ${key === 'clients' ? 'text-blue-300' : 'text-cyan-300'} uppercase">${m.title}</span>
@@ -898,7 +1128,62 @@
       `;
       grid.appendChild(card);
     });
+
+    initMetricCounters();
   }
+  function initMetricCounters() {
+    const section = document.getElementById('metrics-section');
+    if (!section) return;
+
+    let animated = false;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !animated) {
+          animated = true;
+          const counters = section.querySelectorAll('.stat-counter');
+          const duration = 1800; // Total animation time in ms (1.8 seconds)
+
+          counters.forEach(counter => {
+            const target = parseFloat(counter.getAttribute('data-target')) || 0;
+            const suffix = counter.getAttribute('data-suffix') || '';
+            const isDecimal = counter.getAttribute('data-decimal') === 'true';
+
+            const startTime = performance.now();
+
+            function updateCounter(currentTime) {
+              const elapsed = currentTime - startTime;
+              const progress = Math.min(elapsed / duration, 1);
+
+              // Ease-out cubic curve: fast start, soft stop
+              const easeProgress = 1 - Math.pow(1 - progress, 3);
+              const currentValue = easeProgress * target;
+
+              if (isDecimal) {
+                counter.textContent = currentValue.toFixed(1) + suffix;
+              } else {
+                counter.textContent = Math.floor(currentValue) + suffix;
+              }
+
+              if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+              } else {
+                counter.textContent = (isDecimal ? target.toFixed(1) : target) + suffix;
+              }
+            }
+
+            requestAnimationFrame(updateCounter);
+          });
+
+          // Unobserve so the counter does not reset repeatedly during scrolling
+          observer.unobserve(section);
+        }
+      });
+    }, { threshold: 0.25 });
+
+    observer.observe(section);
+  }
+
 
   function renderReviews() {
     const grid = document.getElementById('reviews-grid');
@@ -912,30 +1197,67 @@
     section.style.display = '';
     grid.innerHTML = '';
 
+    const instagramUrl = siteConfig.instagram || 'https://www.instagram.com/';
+
     reviews.forEach(review => {
       const card = document.createElement('div');
-      card.className = 'bg-[#0c1017]/80 border border-cyan-500/20 rounded-3xl p-6 sm:p-8 space-y-4';
+      card.className = 'bg-[#0c1017]/80 border border-cyan-500/20 rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-cyan-400/40 transition-all shadow-[0_0_30px_rgba(6,182,212,0.06)] hover:shadow-[0_0_40px_rgba(6,182,212,0.15)]';
       card.innerHTML = `
-        <div class="flex items-center gap-1 text-yellow-400 text-lg">
-          ${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}
+        <div class="space-y-4">
+          <!-- Top Row: Star Rating & Verified Pill -->
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-1 text-yellow-400 text-base">
+              ${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}
+            </div>
+            <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-cyan-500/10 border border-cyan-400/30 text-[10px] font-mono font-bold text-cyan-300 uppercase tracking-wider">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+              Verified Feedback
+            </span>
+          </div>
+
+          <!-- Review Statement -->
+          <p class="text-slate-300 text-sm leading-relaxed italic">"${review.text}"</p>
         </div>
-        <p class="text-slate-300 text-sm leading-relaxed italic">"${review.text}"</p>
-        <div class="flex items-center gap-3 pt-2 border-t border-cyan-500/15">
-          <div class="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center text-cyan-300 font-heading font-bold">${review.name.charAt(0)}</div>
-          <div>
-            <div class="text-white font-heading font-bold text-sm">${review.name}</div>
-            <div class="text-slate-400 text-xs">${review.role}, ${review.company}</div>
+
+        <!-- Card Footer -->
+        <div class="pt-6 mt-4 border-t border-cyan-500/15 space-y-4">
+          <!-- Author Info -->
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-cyan-500/20 border border-cyan-400/30 flex items-center justify-center text-cyan-300 font-heading font-bold">
+              ${review.name.charAt(0)}
+            </div>
+            <div>
+              <div class="text-white font-heading font-bold text-sm">${review.name}</div>
+              <div class="text-slate-400 text-xs">${review.role}, ${review.company}</div>
+            </div>
+          </div>
+
+          <!-- Instagram Testimonials Link Tag -->
+          <div class="pt-2 border-t border-cyan-500/10">
+            <a 
+              href="${instagramUrl}" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="inline-flex items-center justify-between w-full px-3 py-2 rounded-xl bg-[#101722] hover:bg-[#162030] border border-cyan-500/25 hover:border-cyan-400 text-[11px] text-slate-300 hover:text-cyan-300 transition-all group/ig"
+            >
+              <span class="flex items-center gap-2">
+                <svg class="w-3.5 h-3.5 text-pink-400 group-hover/ig:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                <span class="font-mono font-medium">Verify on Official Instagram</span>
+              </span>
+              <span class="text-cyan-400 group-hover/ig:translate-x-0.5 transition-transform">↗</span>
+            </a>
           </div>
         </div>
       `;
       grid.appendChild(card);
     });
   }
-
   function renderTeam() {
-    const section = document.getElementById('team');
     const grid = document.getElementById('team-grid');
-    if (!section || !grid) return;
+    const section = document.getElementById('team');
+    if (!grid || !section) return;
 
     if (!team || team.length === 0) {
       section.style.display = 'none';
@@ -944,19 +1266,34 @@
     section.style.display = '';
     grid.innerHTML = '';
 
-    team.forEach(member => {
-      const card = document.createElement('div');
-      card.className = 'bg-[#0c1017]/70 border border-cyan-500/20 rounded-3xl p-6 text-center group hover:border-cyan-400 hover:shadow-[0_0_30px_rgba(6,182,212,0.18)] transition-all flex flex-col items-center';
-      card.innerHTML = `
-        <div class="w-36 h-36 rounded-full overflow-hidden mb-6 border-2 border-cyan-500/30 group-hover:border-cyan-300 group-hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all shadow-xl bg-slate-900">
-          <img alt="${member.name} - ${member.role}" loading="lazy" class="w-full h-full object-cover object-top filter grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" src="${member.image}"/>
+    // Generate single card HTML
+    const buildCard = (member) => `
+      <div class="shrink-0 w-[290px] sm:w-[320px] bg-[#0c1017]/90 border border-cyan-500/20 hover:border-cyan-400 rounded-3xl p-6 text-center transition-all shadow-[0_0_25px_rgba(6,182,212,0.05)] hover:shadow-[0_0_35px_rgba(6,182,212,0.2)] flex flex-col items-center justify-between group select-none">
+        <div class="flex flex-col items-center w-full">
+          <!-- Circular Avatar with Fallback Initials -->
+          <div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-cyan-500/30 group-hover:border-cyan-300 group-hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all shadow-xl bg-slate-900 flex items-center justify-center relative">
+            <img 
+              alt="${member.name}" 
+              loading="lazy" 
+              class="w-full h-full object-cover object-top filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" 
+              src="${member.image}"
+              onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+            />
+            <div class="hidden w-full h-full flex items-center justify-center font-heading font-black text-3xl text-cyan-300 bg-[#101722]">
+              ${member.name ? member.name.charAt(0) : 'F'}
+            </div>
+          </div>
+
+          <h3 class="text-lg font-heading font-bold text-white uppercase tracking-wide group-hover:text-cyan-300 transition-colors">${member.name}</h3>
+          <span class="text-[11px] font-mono text-cyan-400 mt-1 uppercase tracking-wider">${member.role}</span>
+          <p class="text-xs text-slate-400 mt-4 leading-relaxed">${member.bio}</p>
         </div>
-        <h3 class="text-lg font-heading font-bold text-white uppercase">${member.name}</h3>
-        <span class="text-xs font-mono text-cyan-400 mt-1 uppercase tracking-wider">${member.role}</span>
-        <p class="text-xs text-slate-400 mt-4 leading-relaxed">${member.bio}</p>
-      `;
-      grid.appendChild(card);
-    });
+      </div>
+    `;
+
+    // Render set 1 + set 2 to create a seamless, infinite loop
+    const fullSet = [...team, ...team];
+    grid.innerHTML = fullSet.map(member => buildCard(member)).join('');
   }
 
   function handleRouting() {
