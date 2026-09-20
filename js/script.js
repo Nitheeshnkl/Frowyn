@@ -912,8 +912,11 @@
               <img 
                 src="${project.image}" 
                 alt="${project.title} — ${project.category}" 
-                class="w-full h-[280px] sm:h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" 
+                width="700"
+                height="400"
                 loading="lazy"
+                decoding="async"
+                class="w-full h-[280px] sm:h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" 
               />
               
               <!-- Badges Layered on Image -->
@@ -1277,7 +1280,10 @@
           <div class="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-cyan-500/30 group-hover:border-cyan-300 group-hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all shadow-xl bg-slate-900 flex items-center justify-center relative">
             <img 
               alt="${member.name}" 
+              width="128"
+              height="128"
               loading="lazy" 
+              decoding="async"
               class="w-full h-full object-cover object-top filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" 
               src="${member.image}"
               onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
@@ -1475,7 +1481,7 @@
   }
 
   function initMicroInteractions() {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || window.matchMedia('(pointer: coarse)').matches) return;
 
     const ring = document.getElementById('cursor-ring');
     const dot = document.getElementById('cursor-dot');
