@@ -1525,13 +1525,7 @@
       el.addEventListener('mouseleave', () => ring && ring.classList.remove('cursor-active'));
     });
 
-    document.querySelectorAll('.interactive-card').forEach(card => {
-      card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        card.style.setProperty('--mouse-x', (e.clientX - rect.left) + 'px');
-        card.style.setProperty('--mouse-y', (e.clientY - rect.top) + 'px');
-      });
-    });
+
 
     document.querySelectorAll('.btn-magnetic').forEach(btn => {
       btn.addEventListener('mousemove', (e) => {
@@ -1545,6 +1539,33 @@
       });
     });
 
+    // Desktop-only hover/card tilt interactions
+    document.querySelectorAll('.interactive-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        card.style.setProperty('--mouse-x', (e.clientX - rect.left) + 'px');
+        card.style.setProperty('--mouse-y', (e.clientY - rect.top) + 'px');
+      });
+    });
+  }
+
+  // -----------------------------------------------------------------------------
+  // 8. INITIALIZATION
+  // -----------------------------------------------------------------------------
+  // -----------------------------------------------------------------------------
+  // 8b. SCROLL REVEAL OBSERVER — runs on ALL devices including mobile
+  // -----------------------------------------------------------------------------
+  function initScrollReveals() {
+    // If reduced motion is preferred, immediately reveal all elements
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal-element, .fx-group').forEach(el => {
+        el.classList.add('is-revealed');
+        el.classList.add('is-in');
+      });
+      return;
+    }
+
+    // Use a lower threshold (0.10) so elements trigger even on small mobile viewports
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -1552,13 +1573,11 @@
           entry.target.classList.add('is-in');
         }
       });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.10 });
+
     document.querySelectorAll('.reveal-element, .fx-group').forEach(el => observer.observe(el));
   }
 
-  // -----------------------------------------------------------------------------
-  // 8. INITIALIZATION
-  // -----------------------------------------------------------------------------
   function init() {
     hydrateContactAndFooter();
     renderClientMarquee();
@@ -1572,6 +1591,7 @@
     initScrollHeader();
     initHeroStagger();
     initPlanSelection();
+    initScrollReveals();
     initMicroInteractions();
 
     window.addEventListener('hashchange', handleRouting);
