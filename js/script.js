@@ -85,9 +85,19 @@
       visualType: 'browser-terminal',
       accent: 'cyan',
     },
+      {
+      id: 'digital-experiences',
+      index: '02',
+      title: 'HIGH-PERFORMANCE WEBSITES',
+      description: 'Business websites, company websites, landing pages, and portfolio websites engineered for fast load times and a strong digital presence. Responsive, conversion-focused interfaces designed to build credibility and generate enquiries.',
+      tags: ['BUSINESS WEBSITES', 'LANDING PAGES', 'RESPONSIVE INTERFACES'],
+      pillTag: 'Web Experiences',
+      visualType: 'gpu-aperture',
+      accent: 'cyan',
+    },
     {
       id: 'business-systems',
-      index: '02',
+      index: '03',
       title: 'BUSINESS SYSTEMS & ERP SOFTWARE',
       description: 'Software your team uses internally to run the business — custom ERP systems, retail POS software, inventory and billing platforms, employee and admin tools, and role-based operational dashboards. Built specifically for your workflows, not adapted from a generic template.',
       tags: ['CUSTOM ERP SOFTWARE', 'RETAIL POS SYSTEMS', 'INTERNAL BUSINESS TOOLS'],
@@ -97,7 +107,7 @@
     },
     {
       id: 'ai-automation',
-      index: '03',
+      index: '04',
       title: 'AI & WORKFLOW AUTOMATION',
       description: 'Practical automation that removes repetitive manual work from business operations. We integrate AI assistants, build scheduled data pipelines, automate document processing, and connect systems via APIs — applied where automation genuinely improves efficiency.',
       tags: ['WORKFLOW AUTOMATION', 'API INTEGRATIONS', 'BUSINESS PROCESS AUTOMATION'],
@@ -105,16 +115,7 @@
       visualType: 'ai-sphere',
       accent: 'cyan',
     },
-    {
-      id: 'digital-experiences',
-      index: '04',
-      title: 'HIGH-PERFORMANCE WEBSITES',
-      description: 'Business websites, company websites, landing pages, and portfolio websites engineered for fast load times and a strong digital presence. Responsive, conversion-focused interfaces designed to build credibility and generate enquiries.',
-      tags: ['BUSINESS WEBSITES', 'LANDING PAGES', 'RESPONSIVE INTERFACES'],
-      pillTag: 'Web Experiences',
-      visualType: 'gpu-aperture',
-      accent: 'cyan',
-    },
+   
   ];
 
   // --- Projects Data Model ---
@@ -160,7 +161,7 @@
   title: 'YOUR DENTAL CLINIC BY S2 — DR. SHAVEENA RENJITH',
   liveUrl: 'https://nitheeshnkl.github.io/Dental_Landpage/',
   statement: 'An interactive, patient-centric healthcare web platform and clinical digital experience engineered for a Bengaluru-based dental practice, highlighting multi-stage 3D anatomical planning, clear treatment education, hospital-grade hygiene protocols, and friction-free appointment scheduling.',
-  image: './tooth frames/ezgif-frame-123.jpg', // Replace with your portfolio asset path
+  image:'https://nitheeshnkl.github.io/Dental_Landpage/tooth%20frames/ezgif-frame-123.jpg', // Replace with your portfolio asset path
   overview: 'Your Dental Clinic by S2 is an advanced clinical landing page and patient engagement web platform designed for Dr. Shaveena Renjith in Old Madiwala, Bengaluru. The application balances biomimetic scientific presentation with calm, empathetic patient communication, providing comprehensive overviews of aesthetic alignment, restorative care, pediatric dentistry, and direct online consultation bookings.',
   challenge: 'Dental procedures often trigger high patient anxiety and information overwhelm. The practice required a modern digital showcase to bridge complex clinical concepts (such as biomimetic restorations, enamel crystallography, and osseointegrated implants) with transparent, accessible explanations, while enabling straightforward local discovery and multi-channel appointment inquiries.',
   approach: 'Engineered a clean, high-performance responsive web application combining an editorial visual aesthetic, interactive 3D stage inspections, modular treatment detail viewports, transparent clinic hygiene standards, and an intuitive direct-booking consultation pipeline.',
