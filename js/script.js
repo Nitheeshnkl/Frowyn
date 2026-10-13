@@ -179,7 +179,7 @@
   featured: true,
   published: true,
 }
-
+,
     {
       id: 'nexa-ops',
       indexBadge: 'WORK 03',
