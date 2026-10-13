@@ -48,7 +48,7 @@
   const metrics = {
     projects: {
       index: '01',
-      value: '50+',
+      value: '20+',
       title: 'PROJECTS',
       description: 'Mission-critical architectures engineered for enterprise scale.',
       footerLabel: 'Execution Integrity',
@@ -57,7 +57,7 @@
     clients: {
       index: '02',
       value: '15+',
-      title: 'CLIENTS & PARTNERS',
+      title: 'CLIENTS &  VENDORS',
       description: 'Long-term engineering partnerships across high-throughput sectors.',
       footerLabel: 'Production Reliability',
       footerValue: '99.98% Uptime',
@@ -149,10 +149,40 @@
       featured: true,
       published: true,
     },
+     {
+  id: 'your-dental-clinic-s2',
+  indexBadge: 'WORK 02', // Update index as needed for your portfolio order
+  statusBadge: 'COMPLETED CLIENT PROJECT',
+  clientRegion: 'Bengaluru, India',
+  budgetQuotation: '28000 Quotation', // Adjust contract value/scope as applicable
+  category: 'Healthcare & Clinical Web Platform • Interactive Landing Page',
+  eyebrow: 'Healthcare Web Platform • Dental Practice Digital Presence',
+  title: 'YOUR DENTAL CLINIC BY S2 — DR. SHAVEENA RENJITH',
+  liveUrl: 'https://nitheeshnkl.github.io/Dental_Landpage/',
+  statement: 'An interactive, patient-centric healthcare web platform and clinical digital experience engineered for a Bengaluru-based dental practice, highlighting multi-stage 3D anatomical planning, clear treatment education, hospital-grade hygiene protocols, and friction-free appointment scheduling.',
+  image: './tooth frames/ezgif-frame-123.jpg', // Replace with your portfolio asset path
+  overview: 'Your Dental Clinic by S2 is an advanced clinical landing page and patient engagement web platform designed for Dr. Shaveena Renjith in Old Madiwala, Bengaluru. The application balances biomimetic scientific presentation with calm, empathetic patient communication, providing comprehensive overviews of aesthetic alignment, restorative care, pediatric dentistry, and direct online consultation bookings.',
+  challenge: 'Dental procedures often trigger high patient anxiety and information overwhelm. The practice required a modern digital showcase to bridge complex clinical concepts (such as biomimetic restorations, enamel crystallography, and osseointegrated implants) with transparent, accessible explanations, while enabling straightforward local discovery and multi-channel appointment inquiries.',
+  approach: 'Engineered a clean, high-performance responsive web application combining an editorial visual aesthetic, interactive 3D stage inspections, modular treatment detail viewports, transparent clinic hygiene standards, and an intuitive direct-booking consultation pipeline.',
+  solution: 'A cohesive digital experience featuring 3D anatomical visualization stages, interactive service accordions/modals, local Google Maps integration, direct one-tap calling, and a streamlined multi-field appointment reservation modal tailored for high conversion across mobile and desktop.',
+  keyFeatures: [
+    'Interactive Multi-Stage 3D Anatomical & Enamel Visualizations',
+    'Streamlined Appointment Booking Modal with Slot & Treatment Selection',
+    'Comprehensive Treatment Directory (Aligners, Implants, Biomimetic Fillings, RCT)',
+    'Pediatric & Anxiety-Conscious Care Highlights with Patient Trust Reflections',
+    'Hospital-Grade Sterilization & Cleanliness Protocol Showcase',
+    'Local SEO & Practice Accessibility Integration (Madiwala, BTM Layout, Silk Board)',
+    'Direct Multi-Channel Contact Access (Click-to-Call & Google Maps Location)',
+    'Fully Responsive, Mobile-First Performance Architecture'
+  ],
+  outcomes: 'Delivered a production-ready, high-converting digital landing experience that elevates the practice brand, streamlines local patient appointment generation, and clearly articulates clinical excellence.',
+  featured: true,
+  published: true,
+}
 
     {
       id: 'nexa-ops',
-      indexBadge: 'WORK 02',
+      indexBadge: 'WORK 03',
       category: 'Custom ERP Software & Business Operations',
       eyebrow: 'Work 02 • Custom ERP Software & Operations',
       title: 'NOVA FINANCIAL ERP',
@@ -177,7 +207,7 @@
       published: true,
     }, {
       id: 'lumina-pos',
-      indexBadge: 'WORK 03',
+      indexBadge: 'WORK 04',
       category: 'Retail POS & Store Management',
       eyebrow: 'Work 03 • Retail POS & Store Management',
       title: 'LUMINA RETAIL POS',
@@ -1238,23 +1268,7 @@
             </div>
           </div>
 
-          <!-- Instagram Testimonials Link Tag -->
-          <div class="pt-2 border-t border-cyan-500/10">
-            <a 
-              href="${instagramUrl}" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              class="inline-flex items-center justify-between w-full px-3 py-2 rounded-xl bg-[#101722] hover:bg-[#162030] border border-cyan-500/25 hover:border-cyan-400 text-[11px] text-slate-300 hover:text-cyan-300 transition-all group/ig"
-            >
-              <span class="flex items-center gap-2">
-                <svg class="w-3.5 h-3.5 text-pink-400 group-hover/ig:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
-                <span class="font-mono font-medium">Verify on Official Instagram</span>
-              </span>
-              <span class="text-cyan-400 group-hover/ig:translate-x-0.5 transition-transform">↗</span>
-            </a>
-          </div>
+         
         </div>
       `;
       grid.appendChild(card);
