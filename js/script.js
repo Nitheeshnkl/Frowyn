@@ -161,7 +161,7 @@
   title: 'YOUR DENTAL CLINIC BY S2 — DR. SHAVEENA RENJITH',
   liveUrl: 'https://nitheeshnkl.github.io/Dental_Landpage/',
   statement: 'An interactive, patient-centric healthcare web platform and clinical digital experience engineered for a Bengaluru-based dental practice, highlighting multi-stage 3D anatomical planning, clear treatment education, hospital-grade hygiene protocols, and friction-free appointment scheduling.',
-  image:'https://nitheeshnkl.github.io/Dental_Landpage/tooth%20frames/ezgif-frame-123.jpg', // Replace with your portfolio asset path
+  image:'./assets/images/image.png', // Replace with your portfolio asset path
   overview: 'Your Dental Clinic by S2 is an advanced clinical landing page and patient engagement web platform designed for Dr. Shaveena Renjith in Old Madiwala, Bengaluru. The application balances biomimetic scientific presentation with calm, empathetic patient communication, providing comprehensive overviews of aesthetic alignment, restorative care, pediatric dentistry, and direct online consultation bookings.',
   challenge: 'Dental procedures often trigger high patient anxiety and information overwhelm. The practice required a modern digital showcase to bridge complex clinical concepts (such as biomimetic restorations, enamel crystallography, and osseointegrated implants) with transparent, accessible explanations, while enabling straightforward local discovery and multi-channel appointment inquiries.',
   approach: 'Engineered a clean, high-performance responsive web application combining an editorial visual aesthetic, interactive 3D stage inspections, modular treatment detail viewports, transparent clinic hygiene standards, and an intuitive direct-booking consultation pipeline.',
